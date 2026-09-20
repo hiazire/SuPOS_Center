@@ -1,0 +1,91 @@
+name: Android CI & Release Matrix
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-test-release:
+    name: Build, Lint, Test & Assemble
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Grant Execute Permission for Gradlew
+        run: chmod +x gradlew
+
+      - name: Verify Secret Exclusion & Scan Repository
+        run: |
+          echo "Scanning codebase for accidental secrets or token leaks..."
+          # Check for forbidden token patterns in repository
+          if grep -r --exclude-dir={.git,.gradle,build} -E "(ghp_[a-zA-Z0-9]{36}|gho_[a-zA-Z0-9]{36}|BEGIN PRIVATE KEY)" . ; then
+            echo "::error::Detected potentially sensitive token or private key in committed files!"
+            exit 1
+          fi
+          # Check .gitignore covers keystores
+          if ! grep -q "\*.keystore" .gitignore || ! grep -q "\*.jks" .gitignore ; then
+            echo "::error::.gitignore must strictly exclude *.keystore and *.jks files!"
+            exit 1
+          fi
+          echo "Secret check passed cleanly."
+
+      - name: Run Android Lint (Staging & Production)
+        run: ./gradlew lintStagingDebug lintProductionDebug --no-daemon
+
+      - name: Run Unit Tests & Migration Matrix
+        run: ./gradlew testStagingDebugUnitTest testProductionDebugUnitTest --no-daemon
+
+      - name: Assemble Staging & Production Release APKs
+        env:
+          RELEASE_KEYSTORE_PATH: ${{ secrets.RELEASE_KEYSTORE_PATH }}
+          RELEASE_KEYSTORE_PASSWORD: ${{ secrets.RELEASE_KEYSTORE_PASSWORD }}
+          RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
+          RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: ./gradlew assembleStagingRelease assembleProductionRelease --no-daemon
+
+      - name: Upload Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: supos-test-reports
+          path: app/build/reports/tests/
+          retention-days: 7
+
+      - name: Upload Lint Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: supos-lint-reports
+          path: app/build/reports/lint-results-*.html
+          retention-days: 7
+
+      - name: Upload Staging Release APK
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: supos-staging-apk
+          path: app/build/outputs/apk/staging/release/*.apk
+          retention-days: 14
+
+      - name: Upload Production Release APK
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: supos-production-apk
+          path: app/build/outputs/apk/production/release/*.apk
+          retention-days: 14

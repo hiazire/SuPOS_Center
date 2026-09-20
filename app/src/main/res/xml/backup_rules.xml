@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- 針對舊版 Android Full Backup 排除 POS 營運資料庫與敏感設定 -->
+    <exclude domain="database" path="supos_database" />
+    <exclude domain="database" path="supos_database-shm" />
+    <exclude domain="database" path="supos_database-wal" />
+    <exclude domain="sharedpref" path="." />
+    <exclude domain="root" path="." />
+    <exclude domain="file" path="." />
+</full-backup-content>

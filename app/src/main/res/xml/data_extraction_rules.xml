@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- 嚴格封鎖 POS 營運資料庫、離線佇列與交易快照 -->
+        <exclude domain="database" path="supos_database" />
+        <exclude domain="database" path="supos_database-shm" />
+        <exclude domain="database" path="supos_database-wal" />
+        <!-- 封鎖偏好設定與可能的 Token/金鑰儲存 -->
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="root" path="." />
+        <exclude domain="file" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <!-- 禁止未授權跨裝置遷移營運與認證資料 -->
+        <exclude domain="database" path="supos_database" />
+        <exclude domain="database" path="supos_database-shm" />
+        <exclude domain="database" path="supos_database-wal" />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="root" path="." />
+        <exclude domain="file" path="." />
+    </device-transfer>
+</data-extraction-rules>
