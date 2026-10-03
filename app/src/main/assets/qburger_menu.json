@@ -1,0 +1,7500 @@
+{
+  "version": "QBURGER_v1",
+  "storeCode": "Q23031",
+  "storeName": "八德介壽店",
+  "menu": [
+    {
+      "id": "1",
+      "code": "QS02000100",
+      "category": "可朗芙",
+      "name": "經典可朗芙",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "2",
+      "code": "QS02000200",
+      "category": "可朗芙",
+      "name": "花醬可朗芙",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "3",
+      "code": "QS02000400",
+      "category": "可朗芙",
+      "name": "香蘋煉乳可朗芙",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "4",
+      "code": "QS02000500",
+      "category": "可朗芙",
+      "name": "鮪魚玉米可朗芙",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "5",
+      "code": "QS02001000",
+      "category": "可朗芙",
+      "name": "起士嫩蛋可朗芙",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "6",
+      "code": "QS02001100",
+      "category": "可朗芙",
+      "name": "蜂蜜可朗芙",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "7",
+      "code": "QS02001400",
+      "category": "可朗芙",
+      "name": "草莓煉乳可朗芙",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "8",
+      "code": "QS02001600",
+      "category": "可朗芙",
+      "name": "雙重巧克可朗芙",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "9",
+      "code": "QS02002700",
+      "category": "可朗芙",
+      "name": "雙饗瘋蜜卡啦雞可朗芙",
+      "price": 160,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "10",
+      "code": "QS04000300",
+      "category": "輕享新食尚",
+      "name": "蔬菜蛋(吐)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "11",
+      "code": "QS04000301",
+      "category": "輕享新食尚",
+      "name": "蔬菜蛋(麥香)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "12",
+      "code": "QS04000404",
+      "category": "吐司/總匯類",
+      "name": "經典火腿(麥香)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "13",
+      "code": "QS04000411",
+      "category": "吐司/總匯類",
+      "name": "APP特餐-經典火腿蛋(吐)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "14",
+      "code": "QS04000600",
+      "category": "吐司/總匯類",
+      "name": "培根(吐)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "15",
+      "code": "QS04000601",
+      "category": "吐司/總匯類",
+      "name": "培根蛋(吐)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "16",
+      "code": "QS04000602",
+      "category": "吐司/總匯類",
+      "name": "培根蛋(麥香)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "17",
+      "code": "QS04000603",
+      "category": "吐司/總匯類",
+      "name": "培根(麥香)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "18",
+      "code": "QS04000700",
+      "category": "吐司/總匯類",
+      "name": "鮪魚(吐)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "19",
+      "code": "QS04000701",
+      "category": "吐司/總匯類",
+      "name": "鮪魚(漢堡)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "20",
+      "code": "QS04000702",
+      "category": "吐司/總匯類",
+      "name": "鮪魚(麥香)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "21",
+      "code": "QS04000720",
+      "category": "吐司/總匯類",
+      "name": "APP特餐-鮪魚(吐)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "22",
+      "code": "QS04000800",
+      "category": "吐司/總匯類",
+      "name": "麥香雞(吐)",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "23",
+      "code": "QS04000801",
+      "category": "吐司/總匯類",
+      "name": "麥香雞(麥香)",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "24",
+      "code": "QS04001600",
+      "category": "吐司/總匯類",
+      "name": "里肌豬排(吐)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "25",
+      "code": "QS04001601",
+      "category": "吐司/總匯類",
+      "name": "里肌豬排(麥香)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "26",
+      "code": "QS04001700",
+      "category": "吐司/總匯類",
+      "name": "薯餅起士(吐)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "27",
+      "code": "QS04001701",
+      "category": "吐司/總匯類",
+      "name": "薯餅起士(漢堡)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "28",
+      "code": "QS04001702",
+      "category": "吐司/總匯類",
+      "name": "薯餅起士(麥香)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "29",
+      "code": "QS04001900",
+      "category": "吐司/總匯類",
+      "name": "里肌豬排總匯",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "30",
+      "code": "QS04001901",
+      "category": "吐司/總匯類",
+      "name": "里肌豬排總匯(白吐)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "31",
+      "code": "QS04001902",
+      "category": "吐司/總匯類",
+      "name": "里肌豬排總匯(麥香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "32",
+      "code": "QS04002000",
+      "category": "吐司/總匯類",
+      "name": "蔬菜總匯",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "33",
+      "code": "QS04002001",
+      "category": "吐司/總匯類",
+      "name": "蔬菜總匯(白吐)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "34",
+      "code": "QS04002600",
+      "category": "吐司/總匯類",
+      "name": "嫩脆雞胸(吐)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "35",
+      "code": "QS04002601",
+      "category": "吐司/總匯類",
+      "name": "嫩脆雞胸(麥香)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "36",
+      "code": "QS04003100",
+      "category": "吐司/總匯類",
+      "name": "蜜汁嫩雞腿(吐)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "37",
+      "code": "QS04003101",
+      "category": "吐司/總匯類",
+      "name": "蜜汁嫩雞腿(麥香)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "38",
+      "code": "QS04003200",
+      "category": "吐司/總匯類",
+      "name": "100%肉鬆花生蛋(吐)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "39",
+      "code": "QS04003201",
+      "category": "吐司/總匯類",
+      "name": "100%肉鬆花生蛋(麥香)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "40",
+      "code": "QS04003600",
+      "category": "吐司/總匯類",
+      "name": "經典火腿蛋(吐)",
+      "price": 49,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "41",
+      "code": "QS04003601",
+      "category": "吐司/總匯類",
+      "name": "經典火腿蛋(麥香)",
+      "price": 49,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "42",
+      "code": "QS04003605",
+      "category": "吐司/總匯類",
+      "name": "經典火腿蛋(吐)",
+      "price": 49,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "43",
+      "code": "QS04003610",
+      "category": "吐司/總匯類",
+      "name": "經典火腿(吐)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "44",
+      "code": "QS04004200",
+      "category": "吐司/總匯類",
+      "name": "香煎豬(吐)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "45",
+      "code": "QS04004201",
+      "category": "吐司/總匯類",
+      "name": "香煎豬(麥香)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "46",
+      "code": "QS04004300",
+      "category": "吐司/總匯類",
+      "name": "香煎豬總匯",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "47",
+      "code": "QS04004301",
+      "category": "吐司/總匯類",
+      "name": "香煎豬總匯(白吐)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "48",
+      "code": "QS04004302",
+      "category": "吐司/總匯類",
+      "name": "香煎豬總匯(麥香)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "49",
+      "code": "QS04004600",
+      "category": "吐司/總匯類",
+      "name": "燒肉蛋(吐)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "50",
+      "code": "QS04004602",
+      "category": "吐司/總匯類",
+      "name": "燒肉乳酪蛋(吐)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "51",
+      "code": "QS04004606",
+      "category": "吐司/總匯類",
+      "name": "燒肉蛋(麥香)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "52",
+      "code": "QS04004607",
+      "category": "吐司/總匯類",
+      "name": "燒肉乳酪蛋(麥香)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "53",
+      "code": "QS04004608",
+      "category": "吐司/總匯類",
+      "name": "燒肉半熟蛋吐司",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "54",
+      "code": "QS04004609",
+      "category": "吐司/總匯類",
+      "name": "燒肉半熟蛋麥香",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "55",
+      "code": "QS04004610",
+      "category": "吐司/總匯類",
+      "name": "燒肉乳酪半熟蛋吐司",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "56",
+      "code": "QS04004611",
+      "category": "吐司/總匯類",
+      "name": "燒肉乳酪半熟蛋麥香",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "57",
+      "code": "QS04005500",
+      "category": "吐司/總匯類",
+      "name": "塔香鹹豬肉蛋吐司",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "58",
+      "code": "QS04006200",
+      "category": "吐司/總匯類",
+      "name": "花生火腿滑蛋多士(白吐)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "59",
+      "code": "QS04006201",
+      "category": "吐司/總匯類",
+      "name": "花生火腿滑蛋多士(麥香)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "60",
+      "code": "QS07000300",
+      "category": "吐司/總匯類",
+      "name": "沙拉(吐)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "61",
+      "code": "QS07000301",
+      "category": "吐司/總匯類",
+      "name": "沙拉(一片吐)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "62",
+      "code": "QS07000302",
+      "category": "吐司/總匯類",
+      "name": "沙拉(麥香)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "63",
+      "code": "QS07000303",
+      "category": "吐司/總匯類",
+      "name": "沙拉(一片麥香)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "64",
+      "code": "QS07000400",
+      "category": "吐司/總匯類",
+      "name": "花生(吐)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "65",
+      "code": "QS07000401",
+      "category": "厚切吐司",
+      "name": "花生(厚)",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "66",
+      "code": "QS07000402",
+      "category": "吐司/總匯類",
+      "name": "花生(一片吐)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "67",
+      "code": "QS07000403",
+      "category": "吐司/總匯類",
+      "name": "花生(麥香)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "68",
+      "code": "QS07000404",
+      "category": "吐司/總匯類",
+      "name": "花生(一片麥香)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "69",
+      "code": "QS07000500",
+      "category": "吐司/總匯類",
+      "name": "草莓(吐)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "70",
+      "code": "QS07000501",
+      "category": "厚切吐司",
+      "name": "草莓(厚)",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "71",
+      "code": "QS07000502",
+      "category": "吐司/總匯類",
+      "name": "草莓(一片吐)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "72",
+      "code": "QS07000503",
+      "category": "吐司/總匯類",
+      "name": "草莓(麥香)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "73",
+      "code": "QS07000504",
+      "category": "吐司/總匯類",
+      "name": "草莓(一片麥香)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "74",
+      "code": "QS07000600",
+      "category": "吐司/總匯類",
+      "name": "奶油(吐)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "75",
+      "code": "QS07000601",
+      "category": "厚切吐司",
+      "name": "奶油(厚)",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "76",
+      "code": "QS07000602",
+      "category": "吐司/總匯類",
+      "name": "奶油(一片吐)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "77",
+      "code": "QS07000603",
+      "category": "吐司/總匯類",
+      "name": "奶油(麥香)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "78",
+      "code": "QS07000604",
+      "category": "吐司/總匯類",
+      "name": "奶油(一片麥香)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "79",
+      "code": "QS07000700",
+      "category": "吐司/總匯類",
+      "name": "椰香(吐)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "80",
+      "code": "QS07000701",
+      "category": "厚切吐司",
+      "name": "椰香(厚)",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "81",
+      "code": "QS07000702",
+      "category": "吐司/總匯類",
+      "name": "椰香(一片吐)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "82",
+      "code": "QS07000703",
+      "category": "吐司/總匯類",
+      "name": "椰香(麥香)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "83",
+      "code": "QS07000704",
+      "category": "吐司/總匯類",
+      "name": "椰香(一片麥香)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "84",
+      "code": "QS07000800",
+      "category": "吐司/總匯類",
+      "name": "巧克力(吐)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "85",
+      "code": "QS07000801",
+      "category": "厚切吐司",
+      "name": "巧克力(厚)",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "86",
+      "code": "QS07000802",
+      "category": "吐司/總匯類",
+      "name": "巧克力(一片吐)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "87",
+      "code": "QS07000803",
+      "category": "吐司/總匯類",
+      "name": "巧克力(麥香)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "88",
+      "code": "QS07000804",
+      "category": "吐司/總匯類",
+      "name": "巧克力(一片麥香)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "89",
+      "code": "QS07000900",
+      "category": "吐司/總匯類",
+      "name": "吐司一片",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "90",
+      "code": "QS07000901",
+      "category": "吐司/總匯類",
+      "name": "麥香吐司一片",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "91",
+      "code": "QS08000100",
+      "category": "蛋餅抓餅類",
+      "name": "原味蛋餅",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "92",
+      "code": "QS08000200",
+      "category": "蛋餅抓餅類",
+      "name": "火腿蛋餅",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "93",
+      "code": "QS08000300",
+      "category": "蛋餅抓餅類",
+      "name": "玉米蛋餅",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "94",
+      "code": "QS08000500",
+      "category": "蛋餅抓餅類",
+      "name": "九層塔蛋餅",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "95",
+      "code": "QS08000600",
+      "category": "蛋餅抓餅類",
+      "name": "鮪魚蛋餅",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "96",
+      "code": "QS08000700",
+      "category": "蛋餅抓餅類",
+      "name": "培根蛋餅",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "97",
+      "code": "QS08000800",
+      "category": "蛋餅抓餅類",
+      "name": "里肌豬排蛋餅",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "98",
+      "code": "QS08000900",
+      "category": "蛋餅抓餅類",
+      "name": "怪怪總匯蛋餅",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "99",
+      "code": "QS08001100",
+      "category": "蛋餅抓餅類",
+      "name": "100%肉鬆蛋餅",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "100",
+      "code": "QS08001700",
+      "category": "蛋餅抓餅類",
+      "name": "塔香鹹豬肉蛋餅",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "101",
+      "code": "QS09000103",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "102",
+      "code": "QS09000104",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐(麥香)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "103",
+      "code": "QS09000201",
+      "category": "經典盤餐",
+      "name": "中式組合餐",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "104",
+      "code": "QS09000302",
+      "category": "經典盤餐",
+      "name": "活力雞",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "105",
+      "code": "QS09000303",
+      "category": "經典盤餐",
+      "name": "活力雞(麥香)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "106",
+      "code": "QS09000402",
+      "category": "經典盤餐",
+      "name": "活力豬排",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "107",
+      "code": "QS09000403",
+      "category": "經典盤餐",
+      "name": "活力豬排(麥香)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "108",
+      "code": "QS09000504",
+      "category": "經典盤餐",
+      "name": "活力德式香腸",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "109",
+      "code": "QS09000505",
+      "category": "經典盤餐",
+      "name": "活力德腸(麥香)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "110",
+      "code": "QS09000700",
+      "category": "經典盤餐",
+      "name": "樂活歐姆",
+      "price": 110,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "111",
+      "code": "QS09001060",
+      "category": "鐵板麵、炒泡麵",
+      "name": "黑麵-組",
+      "price": 100,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "112",
+      "code": "QS09001061",
+      "category": "鐵板麵、炒泡麵",
+      "name": "黑麵-組(油麵)",
+      "price": 100,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "113",
+      "code": "QS09001062",
+      "category": "鐵板麵、炒泡麵",
+      "name": "蘑菇麵-組",
+      "price": 100,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "114",
+      "code": "QS09001063",
+      "category": "鐵板麵、炒泡麵",
+      "name": "蘑菇麵-組(油麵)",
+      "price": 100,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "115",
+      "code": "QS09001064",
+      "category": "鐵板麵、炒泡麵",
+      "name": "沙茶麵-組(烏龍)",
+      "price": 100,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "116",
+      "code": "QS09001065",
+      "category": "鐵板麵、炒泡麵",
+      "name": "沙茶麵-組",
+      "price": 100,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "117",
+      "code": "QS09001600",
+      "category": "經典盤餐",
+      "name": "香煎豬總匯盤餐",
+      "price": 105,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "118",
+      "code": "QS09001601",
+      "category": "經典盤餐",
+      "name": "香煎豬總匯盤餐(白吐)",
+      "price": 105,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "119",
+      "code": "QS09001602",
+      "category": "經典盤餐",
+      "name": "香煎豬總匯盤餐(麥香)",
+      "price": 105,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "120",
+      "code": "QS09001700",
+      "category": "經典盤餐",
+      "name": "里肌豬總匯盤餐",
+      "price": 120,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "121",
+      "code": "QS09001701",
+      "category": "經典盤餐",
+      "name": "里肌豬總匯盤餐(白吐)",
+      "price": 120,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "122",
+      "code": "QS09001702",
+      "category": "經典盤餐",
+      "name": "里肌豬總匯盤餐(麥香)",
+      "price": 120,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "123",
+      "code": "QS09001800",
+      "category": "經典盤餐",
+      "name": "鮪魚玉米可朗芙盤餐",
+      "price": 125,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "124",
+      "code": "QS09002000",
+      "category": "經典盤餐",
+      "name": "QB經典大滿足盤餐",
+      "price": 155,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "125",
+      "code": "QS09002600",
+      "category": "經典盤餐",
+      "name": "QB經典大滿足(鮪魚玉米)",
+      "price": 180,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "126",
+      "code": "QS09002602",
+      "category": "經典盤餐",
+      "name": "QB經典大滿足(起士嫩蛋)",
+      "price": 180,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "127",
+      "code": "QS09002603",
+      "category": "經典盤餐",
+      "name": "QB經典大滿足(雙重巧克)",
+      "price": 170,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "128",
+      "code": "QS09002604",
+      "category": "經典盤餐",
+      "name": "QB經典大滿足(蜂蜜)",
+      "price": 160,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "129",
+      "code": "QS09002605",
+      "category": "經典盤餐",
+      "name": "QB經典大滿足(草莓煉乳)",
+      "price": 170,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "130",
+      "code": "QS09002606",
+      "category": "經典盤餐",
+      "name": "QB經典大滿足(花醬)",
+      "price": 165,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "131",
+      "code": "QS09002607",
+      "category": "經典盤餐",
+      "name": "QB經典大滿足(香蘋煉乳)",
+      "price": 170,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "132",
+      "code": "QS09002800",
+      "category": "經典盤餐",
+      "name": "活力豬排(巧克力)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "133",
+      "code": "QS09002801",
+      "category": "經典盤餐",
+      "name": "活力豬排(花生)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "134",
+      "code": "QS09002802",
+      "category": "經典盤餐",
+      "name": "活力豬排(草莓)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "135",
+      "code": "QS09002803",
+      "category": "經典盤餐",
+      "name": "活力豬排(奶油)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "136",
+      "code": "QS09002804",
+      "category": "經典盤餐",
+      "name": "活力豬排(椰香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "137",
+      "code": "QS09002805",
+      "category": "經典盤餐",
+      "name": "活力豬排(巧克力麥香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "138",
+      "code": "QS09002806",
+      "category": "經典盤餐",
+      "name": "活力豬排(花生麥香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "139",
+      "code": "QS09002807",
+      "category": "經典盤餐",
+      "name": "活力豬排(草莓麥香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "140",
+      "code": "QS09002808",
+      "category": "經典盤餐",
+      "name": "活力豬排(奶油麥香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "141",
+      "code": "QS09002809",
+      "category": "經典盤餐",
+      "name": "活力豬排(椰香麥香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "142",
+      "code": "QS09003000",
+      "category": "經典盤餐",
+      "name": "活力菲力雞(巧克力)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "143",
+      "code": "QS09003001",
+      "category": "經典盤餐",
+      "name": "活力菲力雞(花生)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "144",
+      "code": "QS09003002",
+      "category": "經典盤餐",
+      "name": "活力菲力雞(草莓)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "145",
+      "code": "QS09003003",
+      "category": "經典盤餐",
+      "name": "活力菲力雞(奶油)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "146",
+      "code": "QS09003004",
+      "category": "經典盤餐",
+      "name": "活力菲力雞(椰香)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "147",
+      "code": "QS09003005",
+      "category": "經典盤餐",
+      "name": "活力菲力雞(巧克力麥香)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "148",
+      "code": "QS09003006",
+      "category": "經典盤餐",
+      "name": "活力菲力雞(花生麥香)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "149",
+      "code": "QS09003007",
+      "category": "經典盤餐",
+      "name": "活力菲力雞(草莓麥香)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "150",
+      "code": "QS09003008",
+      "category": "經典盤餐",
+      "name": "活力菲力雞(奶油麥香)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "151",
+      "code": "QS09003009",
+      "category": "經典盤餐",
+      "name": "活力菲力雞(椰香麥香)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "152",
+      "code": "QS09003200",
+      "category": "經典盤餐",
+      "name": "活力德式香腸(巧克力)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "153",
+      "code": "QS09003201",
+      "category": "經典盤餐",
+      "name": "活力德式香腸(花生)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "154",
+      "code": "QS09003202",
+      "category": "經典盤餐",
+      "name": "活力德式香腸(草莓)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "155",
+      "code": "QS09003203",
+      "category": "經典盤餐",
+      "name": "活力德式香腸(奶油)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "156",
+      "code": "QS09003204",
+      "category": "經典盤餐",
+      "name": "活力德式香腸(椰香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "157",
+      "code": "QS09003205",
+      "category": "經典盤餐",
+      "name": "活力德式香腸(巧克力麥香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "158",
+      "code": "QS09003206",
+      "category": "經典盤餐",
+      "name": "活力德式香腸(花生麥香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "159",
+      "code": "QS09003207",
+      "category": "經典盤餐",
+      "name": "活力德式香腸(草莓麥香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "160",
+      "code": "QS09003208",
+      "category": "經典盤餐",
+      "name": "活力德式香腸(奶油麥香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "161",
+      "code": "QS09003209",
+      "category": "經典盤餐",
+      "name": "活力德式香腸(椰香麥香)",
+      "price": 95,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "162",
+      "code": "QS09003400",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐(巧克力)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "163",
+      "code": "QS09003401",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐(花生)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "164",
+      "code": "QS09003402",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐(沙拉)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "165",
+      "code": "QS09003403",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐(奶油)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "166",
+      "code": "QS09003404",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐(椰香)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "167",
+      "code": "QS09003405",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐(巧克力麥香)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "168",
+      "code": "QS09003406",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐(花生麥香)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "169",
+      "code": "QS09003407",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐(沙拉麥香)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "170",
+      "code": "QS09003408",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐(奶油麥香)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "171",
+      "code": "QS09003409",
+      "category": "經典盤餐",
+      "name": "歡樂兒童餐(椰香麥香)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "172",
+      "code": "QS09003410",
+      "category": "經典盤餐",
+      "name": "兒童(草莓&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "173",
+      "code": "QS09003411",
+      "category": "經典盤餐",
+      "name": "兒童(草莓麥香&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "174",
+      "code": "QS09003412",
+      "category": "經典盤餐",
+      "name": "兒童(巧克力&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "175",
+      "code": "QS09003413",
+      "category": "經典盤餐",
+      "name": "兒童(巧克力麥香&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "176",
+      "code": "QS09003414",
+      "category": "經典盤餐",
+      "name": "兒童(花生&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "177",
+      "code": "QS09003415",
+      "category": "經典盤餐",
+      "name": "兒童(花生麥香&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "178",
+      "code": "QS09003416",
+      "category": "經典盤餐",
+      "name": "兒童(沙拉&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "179",
+      "code": "QS09003417",
+      "category": "經典盤餐",
+      "name": "兒童(沙拉麥香&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "180",
+      "code": "QS09003418",
+      "category": "經典盤餐",
+      "name": "兒童(奶油&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "181",
+      "code": "QS09003419",
+      "category": "經典盤餐",
+      "name": "兒童(奶油麥香&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "182",
+      "code": "QS09003420",
+      "category": "經典盤餐",
+      "name": "兒童(椰香&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "183",
+      "code": "QS09003421",
+      "category": "經典盤餐",
+      "name": "兒童(椰香麥香&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "184",
+      "code": "QS09003422",
+      "category": "經典盤餐",
+      "name": "兒童(草莓&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "185",
+      "code": "QS09003423",
+      "category": "經典盤餐",
+      "name": "兒童(草莓麥香&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "186",
+      "code": "QS09003424",
+      "category": "經典盤餐",
+      "name": "兒童(巧克力&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "187",
+      "code": "QS09003425",
+      "category": "經典盤餐",
+      "name": "兒童(巧克力麥香&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "188",
+      "code": "QS09003426",
+      "category": "經典盤餐",
+      "name": "兒童(花生&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "189",
+      "code": "QS09003427",
+      "category": "經典盤餐",
+      "name": "兒童(花生麥香&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "190",
+      "code": "QS09003428",
+      "category": "經典盤餐",
+      "name": "兒童(沙拉吐司&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "191",
+      "code": "QS09003429",
+      "category": "經典盤餐",
+      "name": "兒童(沙拉麥香&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "192",
+      "code": "QS09003430",
+      "category": "經典盤餐",
+      "name": "兒童(奶油&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "193",
+      "code": "QS09003431",
+      "category": "經典盤餐",
+      "name": "兒童(奶油麥香&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "194",
+      "code": "QS09003432",
+      "category": "經典盤餐",
+      "name": "兒童(椰香吐司&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "195",
+      "code": "QS09003433",
+      "category": "經典盤餐",
+      "name": "兒童(椰香麥香&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "196",
+      "code": "QS09003434",
+      "category": "經典盤餐",
+      "name": "兒童(蘿蔔糕&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "197",
+      "code": "QS09003435",
+      "category": "經典盤餐",
+      "name": "兒童(蘿蔔糕&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "198",
+      "code": "QS09003436",
+      "category": "經典盤餐",
+      "name": "兒童(薯條&熱狗&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "199",
+      "code": "QS09003437",
+      "category": "經典盤餐",
+      "name": "兒童(薯條&雞塊&蔬果)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "200",
+      "code": "QS09004300",
+      "category": "經典盤餐",
+      "name": "港式大拼盤",
+      "price": 198,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "201",
+      "code": "QS10000100",
+      "category": "義大利麵、燉飯",
+      "name": "奶香培根麵",
+      "price": 110,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "202",
+      "code": "QS10000101",
+      "category": "義大利麵、燉飯",
+      "name": "●奶香培根飯",
+      "price": 110,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "203",
+      "code": "QS10001101",
+      "category": "義大利麵、燉飯",
+      "name": "●奶油鮪魚飯",
+      "price": 115,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "204",
+      "code": "QS10001302",
+      "category": "義大利麵、燉飯",
+      "name": "拿坡里蕃茄德腸乳酪麵",
+      "price": 120,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "205",
+      "code": "QS10001303",
+      "category": "義大利麵、燉飯",
+      "name": "●拿坡里蕃茄德腸乳酪飯",
+      "price": 120,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "206",
+      "code": "QS10001403",
+      "category": "義大利麵、燉飯",
+      "name": "辣味蕃茄菲力雞肉麵",
+      "price": 145,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "207",
+      "code": "QS10001404",
+      "category": "義大利麵、燉飯",
+      "name": "●蕃茄塔香菲力雞飯",
+      "price": 145,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "208",
+      "code": "QS10001405",
+      "category": "義大利麵、燉飯",
+      "name": "●辣味蕃茄菲力雞肉飯",
+      "price": 145,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "209",
+      "code": "QS10001406",
+      "category": "義大利麵、燉飯",
+      "name": "蕃茄塔香菲力雞麵",
+      "price": 145,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "210",
+      "code": "QS10001704",
+      "category": "義大利麵、燉飯",
+      "name": "奶油鮪魚麵",
+      "price": 115,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "211",
+      "code": "QS10001705",
+      "category": "義大利麵、燉飯",
+      "name": "●奶香培根鮪魚(飯)",
+      "price": 125,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "212",
+      "code": "QS10001706",
+      "category": "義大利麵、燉飯",
+      "name": "奶香培根鮪魚(麵)",
+      "price": 125,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "213",
+      "code": "QS10002100",
+      "category": "義大利麵、燉飯",
+      "name": "粉紅醬菲力雞義大利麵",
+      "price": 160,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "214",
+      "code": "QS10002101",
+      "category": "義大利麵、燉飯",
+      "name": "●粉紅醬菲力雞燉飯",
+      "price": 160,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "215",
+      "code": "QS11000100",
+      "category": "漢堡類",
+      "name": "火腿起士蛋(堡)",
+      "price": 52,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "216",
+      "code": "QS11000200",
+      "category": "漢堡類",
+      "name": "牛肉起士(堡)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "217",
+      "code": "QS11000201",
+      "category": "漢堡類",
+      "name": "牛肉起士(白吐司)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "218",
+      "code": "QS11000202",
+      "category": "漢堡類",
+      "name": "牛肉起士(麥香)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "219",
+      "code": "QS11000300",
+      "category": "漢堡類",
+      "name": "卡啦雞腿(堡)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "220",
+      "code": "QS11000301",
+      "category": "漢堡類",
+      "name": "卡啦雞腿(白吐司)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "221",
+      "code": "QS11000302",
+      "category": "漢堡類",
+      "name": "卡啦雞腿(麥香)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "222",
+      "code": "QS11000400",
+      "category": "漢堡類",
+      "name": "培根(堡)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "223",
+      "code": "QS11000401",
+      "category": "漢堡類",
+      "name": "培根蛋(堡)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "224",
+      "code": "QS11000500",
+      "category": "漢堡類",
+      "name": "麥香雞(堡)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "225",
+      "code": "QS11000503",
+      "category": "漢堡類",
+      "name": "APP特餐-麥香雞(堡)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "226",
+      "code": "QS11000600",
+      "category": "漢堡類",
+      "name": "菲力雞(堡)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "227",
+      "code": "QS11000601",
+      "category": "漢堡類",
+      "name": "菲力雞(白吐司)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "228",
+      "code": "QS11000602",
+      "category": "漢堡類",
+      "name": "菲力雞(麥香)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "229",
+      "code": "QS11000700",
+      "category": "漢堡類",
+      "name": "嫩脆雞胸(堡)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "230",
+      "code": "QS11000900",
+      "category": "漢堡類",
+      "name": "經典牛肉起司(堡)",
+      "price": 89,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "231",
+      "code": "QS11000901",
+      "category": "漢堡類",
+      "name": "經典牛肉起司(白吐司)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "232",
+      "code": "QS11000902",
+      "category": "漢堡類",
+      "name": "經典牛肉起司(麥香)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "233",
+      "code": "QS11001100",
+      "category": "漢堡類",
+      "name": "蜜汁嫩雞腿(堡)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "234",
+      "code": "QS11001200",
+      "category": "漢堡類",
+      "name": "蔬菜蛋(堡)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "235",
+      "code": "QS11001300",
+      "category": "漢堡類",
+      "name": "里肌豬排(堡)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "236",
+      "code": "QS11001400",
+      "category": "漢堡類",
+      "name": "澳門帶骨豬扒包",
+      "price": 129,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "237",
+      "code": "QS11001402",
+      "category": "漢堡類",
+      "name": "里肌豬扒包",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "238",
+      "code": "QS11001800",
+      "category": "漢堡類",
+      "name": "鱈魚(堡)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "239",
+      "code": "QS11001801",
+      "category": "漢堡類",
+      "name": "鱈魚(白吐司)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "240",
+      "code": "QS11001802",
+      "category": "漢堡類",
+      "name": "鱈魚(麥香)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "241",
+      "code": "QS11003300",
+      "category": "漢堡類",
+      "name": "香煎豬堡",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "242",
+      "code": "QS11003310",
+      "category": "漢堡類",
+      "name": "APP特餐-香煎豬(堡)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "243",
+      "code": "QS11003602",
+      "category": "漢堡類",
+      "name": "花生熔岩卡啦雞腿堡",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "244",
+      "code": "QS11006700",
+      "category": "漢堡類",
+      "name": "三杯雞漢堡",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "245",
+      "code": "QS12000100",
+      "category": "輕享新食尚",
+      "name": "鮮蔬沙拉",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "246",
+      "code": "QS12000600",
+      "category": "加料類",
+      "name": "外送-炒蛋",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "247",
+      "code": "QS12900100",
+      "category": "輕享新食尚",
+      "name": "單點和風醬",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "248",
+      "code": "QS12900200",
+      "category": "輕享新食尚",
+      "name": "單點千島醬",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "249",
+      "code": "QS12900906",
+      "category": "輕享新食尚",
+      "name": "鮮蔬馬鈴薯沙拉(吐)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "250",
+      "code": "QS12900907",
+      "category": "輕享新食尚",
+      "name": "鮮蔬馬鈴薯沙拉(麥香)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "251",
+      "code": "QS12900908",
+      "category": "輕享新食尚",
+      "name": "鮮蔬馬鈴薯沙拉(漢堡)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "252",
+      "code": "QS12900909",
+      "category": "輕享新食尚",
+      "name": "鮮蔬蕃茄起士(吐)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "253",
+      "code": "QS12900910",
+      "category": "輕享新食尚",
+      "name": "鮮蔬蕃茄起士(麥香)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "254",
+      "code": "QS12900911",
+      "category": "輕享新食尚",
+      "name": "鮮蔬蕃茄起士(漢堡)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "255",
+      "code": "QS12900918",
+      "category": "輕享新食尚",
+      "name": "雙倍菲力雞輕享沙拉(和風)",
+      "price": 139,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "256",
+      "code": "QS12900919",
+      "category": "輕享新食尚",
+      "name": "雙倍菲力雞輕享沙拉(千島)",
+      "price": 139,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "257",
+      "code": "QS12900920",
+      "category": "輕享新食尚",
+      "name": "蜜汁雞腿輕享沙拉(和風)",
+      "price": 119,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "258",
+      "code": "QS12900921",
+      "category": "輕享新食尚",
+      "name": "蜜汁雞腿輕享沙拉(千島)",
+      "price": 119,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "259",
+      "code": "QS12900922",
+      "category": "輕享新食尚",
+      "name": "鮪魚鮮蔬輕享沙拉(和風)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "260",
+      "code": "QS12900923",
+      "category": "輕享新食尚",
+      "name": "鮪魚鮮蔬輕享沙拉(千島)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "261",
+      "code": "QS12900924",
+      "category": "輕享新食尚",
+      "name": "鮮蔬輕享沙拉(和風)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "262",
+      "code": "QS12900925",
+      "category": "輕享新食尚",
+      "name": "鮮蔬輕享沙拉(千島)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "263",
+      "code": "QS13000100",
+      "category": "墨西哥捲",
+      "name": "田園蔬菜(墨)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "264",
+      "code": "QS13000201",
+      "category": "墨西哥捲",
+      "name": "德式香腸(墨)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "265",
+      "code": "QS13000400",
+      "category": "墨西哥捲",
+      "name": "卡啦雞腿(墨)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "266",
+      "code": "QS13000600",
+      "category": "墨西哥捲",
+      "name": "蜜汁嫩雞腿(墨)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "267",
+      "code": "QS13000700",
+      "category": "墨西哥捲",
+      "name": "嫩脆雞胸(墨)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "268",
+      "code": "QS14000100",
+      "category": "三明治",
+      "name": "雙層火腿起士三明治",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "269",
+      "code": "QS14000101",
+      "category": "三明治",
+      "name": "雙層火腿起司三明治(現做)",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "270",
+      "code": "QS14000200",
+      "category": "三明治",
+      "name": "經典火腿蛋三明治",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "271",
+      "code": "QS14000201",
+      "category": "三明治",
+      "name": "經典火腿蛋三明治(現做)",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "272",
+      "code": "QS14000400",
+      "category": "三明治",
+      "name": "鮪魚蛋三明治",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "273",
+      "code": "QS14000401",
+      "category": "三明治",
+      "name": "鮪魚蛋三明治(現做)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "274",
+      "code": "QS14000402",
+      "category": "三明治",
+      "name": "鮪魚起士三明治",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "275",
+      "code": "QS14000403",
+      "category": "三明治",
+      "name": "鮪魚起士三明治(現做)",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "276",
+      "code": "QS14000404",
+      "category": "三明治",
+      "name": "鮪魚火腿雙拼總匯",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "277",
+      "code": "QS14000405",
+      "category": "三明治",
+      "name": "鮪魚火腿雙拼總匯(現做)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "278",
+      "code": "QS14000500",
+      "category": "三明治",
+      "name": "麥香雞蛋三明治",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "279",
+      "code": "QS14000501",
+      "category": "三明治",
+      "name": "麥香雞蛋三明治(現做)",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "280",
+      "code": "QS14000600",
+      "category": "三明治",
+      "name": "薯餅蛋三明治",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "281",
+      "code": "QS14000601",
+      "category": "三明治",
+      "name": "薯餅蛋三明治(現做)",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "282",
+      "code": "QS14000700",
+      "category": "三明治",
+      "name": "卡啦蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "283",
+      "code": "QS14000701",
+      "category": "三明治",
+      "name": "卡啦蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "284",
+      "code": "QS14000702",
+      "category": "三明治",
+      "name": "卡啦起士三明治",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "285",
+      "code": "QS14000703",
+      "category": "三明治",
+      "name": "卡啦起士三明治(現做)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "286",
+      "code": "QS14000704",
+      "category": "三明治",
+      "name": "卡啦雞火腿雙拼總匯",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "287",
+      "code": "QS14000705",
+      "category": "三明治",
+      "name": "卡啦雞火腿雙拼總匯(現做)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "288",
+      "code": "QS14001200",
+      "category": "三明治",
+      "name": "水果三明治",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "289",
+      "code": "QS14001201",
+      "category": "三明治",
+      "name": "水果三明治(現做)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "290",
+      "code": "QS14001402",
+      "category": "三明治",
+      "name": "德腸薯餅三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "291",
+      "code": "QS14001403",
+      "category": "三明治",
+      "name": "德腸薯餅三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "292",
+      "code": "QS14001500",
+      "category": "三明治",
+      "name": "蜜汁嫩雞蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "293",
+      "code": "QS14001501",
+      "category": "三明治",
+      "name": "蜜汁嫩雞蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "294",
+      "code": "QS14001502",
+      "category": "三明治",
+      "name": "蜜汁嫩雞腿起士三明治",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "295",
+      "code": "QS14001503",
+      "category": "三明治",
+      "name": "蜜汁嫩雞腿起士三明治(現做)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "296",
+      "code": "QS14001900",
+      "category": "三明治",
+      "name": "嫩脆雞胸蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "297",
+      "code": "QS14001901",
+      "category": "三明治",
+      "name": "嫩脆雞胸蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "298",
+      "code": "QS14001902",
+      "category": "三明治",
+      "name": "嫩脆雞胸起士三明治",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "299",
+      "code": "QS14001903",
+      "category": "三明治",
+      "name": "嫩脆雞胸起士三明治(現做)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "300",
+      "code": "QS14002000",
+      "category": "三明治",
+      "name": "100%肉鬆蛋三明治",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "301",
+      "code": "QS14002001",
+      "category": "三明治",
+      "name": "100%肉鬆蛋三明治(現做)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "302",
+      "code": "QS14002702",
+      "category": "三明治",
+      "name": "香雞火腿雙拼總匯",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "303",
+      "code": "QS14002703",
+      "category": "三明治",
+      "name": "香雞火腿雙拼總匯(現做)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "304",
+      "code": "QS14002800",
+      "category": "三明治",
+      "name": "100%肉鬆起士三明治",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "305",
+      "code": "QS14002801",
+      "category": "三明治",
+      "name": "100%肉鬆起士三明治(現做)",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "306",
+      "code": "QS14002802",
+      "category": "三明治",
+      "name": "肉鬆鮪魚雙拼總匯",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "307",
+      "code": "QS14002803",
+      "category": "三明治",
+      "name": "肉鬆鮪魚雙拼總匯(現做)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "308",
+      "code": "QS14003000",
+      "category": "三明治",
+      "name": "豬排火腿起士三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "309",
+      "code": "QS14003001",
+      "category": "三明治",
+      "name": "豬排火腿起士三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "310",
+      "code": "QS14003102",
+      "category": "三明治",
+      "name": "鮪魚薯餅蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "311",
+      "code": "QS14003103",
+      "category": "三明治",
+      "name": "鮪魚薯餅蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "312",
+      "code": "QS14003500",
+      "category": "三明治",
+      "name": "馬鈴薯沙拉三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "313",
+      "code": "QS14003501",
+      "category": "三明治",
+      "name": "馬鈴薯沙拉三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "314",
+      "code": "QS14003600",
+      "category": "三明治",
+      "name": "鮮蔬蘋果三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "315",
+      "code": "QS14003601",
+      "category": "三明治",
+      "name": "鮮蔬蘋果三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "316",
+      "code": "QS14003700",
+      "category": "三明治",
+      "name": "蕃茄黃瓜蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "317",
+      "code": "QS14003701",
+      "category": "三明治",
+      "name": "蕃茄黃瓜蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "318",
+      "code": "QS14004800",
+      "category": "三明治",
+      "name": "鹹豬肉蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "319",
+      "code": "QS14004801",
+      "category": "三明治",
+      "name": "鹹豬肉蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "320",
+      "code": "QS14004900",
+      "category": "三明治",
+      "name": "三杯雞鮮蔬蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "321",
+      "code": "QS14004901",
+      "category": "三明治",
+      "name": "三杯雞鮮蔬蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "322",
+      "code": "QS14005100",
+      "category": "三明治",
+      "name": "橙香薯餅起士三明治",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "323",
+      "code": "QS14005101",
+      "category": "三明治",
+      "name": "橙香薯餅起士三明治(現做)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "324",
+      "code": "QS14005200",
+      "category": "三明治",
+      "name": "橙香麥香雞蛋三明治",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "325",
+      "code": "QS14005201",
+      "category": "三明治",
+      "name": "橙香麥香雞蛋三明治(現做)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "326",
+      "code": "QS14005300",
+      "category": "三明治",
+      "name": "橙香里肌豬蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "327",
+      "code": "QS14005301",
+      "category": "三明治",
+      "name": "橙香里肌豬蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "328",
+      "code": "QS14005400",
+      "category": "三明治",
+      "name": "橙香脆雞蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "329",
+      "code": "QS14005401",
+      "category": "三明治",
+      "name": "橙香脆雞蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "330",
+      "code": "QS14005500",
+      "category": "三明治",
+      "name": "橙香卡啦蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "331",
+      "code": "QS14005501",
+      "category": "三明治",
+      "name": "橙香卡啦蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "332",
+      "code": "QS14005600",
+      "category": "三明治",
+      "name": "糖醋薯餅起士三明治",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "333",
+      "code": "QS14005601",
+      "category": "三明治",
+      "name": "糖醋薯餅起士三明治(麥香)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "334",
+      "code": "QS14005602",
+      "category": "三明治",
+      "name": "糖醋薯餅起士三明治(現做)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "335",
+      "code": "QS14005700",
+      "category": "三明治",
+      "name": "糖醋麥香雞蛋三明治",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "336",
+      "code": "QS14005701",
+      "category": "三明治",
+      "name": "糖醋麥香雞蛋三明治(麥香)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "337",
+      "code": "QS14005702",
+      "category": "三明治",
+      "name": "糖醋麥香雞蛋三明治(現做)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "338",
+      "code": "QS14005800",
+      "category": "三明治",
+      "name": "糖醋里肌豬蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "339",
+      "code": "QS14005801",
+      "category": "三明治",
+      "name": "糖醋里肌豬蛋三明治(麥香)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "340",
+      "code": "QS14005802",
+      "category": "三明治",
+      "name": "糖醋里肌豬蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "341",
+      "code": "QS14005900",
+      "category": "三明治",
+      "name": "糖醋脆雞蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "342",
+      "code": "QS14005901",
+      "category": "三明治",
+      "name": "糖醋脆雞蛋三明治(麥香)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "343",
+      "code": "QS14005902",
+      "category": "三明治",
+      "name": "糖醋脆雞蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "344",
+      "code": "QS14006000",
+      "category": "三明治",
+      "name": "糖醋卡啦蛋三明治",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "345",
+      "code": "QS14006001",
+      "category": "三明治",
+      "name": "糖醋卡啦蛋三明治(麥香)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "346",
+      "code": "QS14006002",
+      "category": "三明治",
+      "name": "糖醋卡啦蛋三明治(現做)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "347",
+      "code": "QS15000100",
+      "category": "點心類",
+      "name": "荷包蛋",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "348",
+      "code": "QS15000200",
+      "category": "點心類",
+      "name": "炒蛋",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "349",
+      "code": "QS15000300",
+      "category": "點心類",
+      "name": "九層塔蛋",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "350",
+      "code": "QS15000400",
+      "category": "點心類",
+      "name": "熱狗",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "351",
+      "code": "QS15000500",
+      "category": "點心類",
+      "name": "煎餃",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "352",
+      "code": "QS15000600",
+      "category": "點心類",
+      "name": "蘿蔔糕",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "353",
+      "code": "QS15000601",
+      "category": "點心類",
+      "name": "金牌蘿蔔糕(1片)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "354",
+      "code": "QS15000606",
+      "category": "點心類",
+      "name": "金牌蘿蔔糕(兩片)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "355",
+      "code": "QS15000607",
+      "category": "點心類",
+      "name": "金牌蘿蔔糕(兩片)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "356",
+      "code": "QS15000700",
+      "category": "蛋餅抓餅類",
+      "name": "蔥抓餅",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "357",
+      "code": "QS15000800",
+      "category": "蛋餅抓餅類",
+      "name": "里肌豬排蔥抓餅",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "358",
+      "code": "QS15000900",
+      "category": "點心類",
+      "name": "薯餅(1片)",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "359",
+      "code": "QS15001000",
+      "category": "點心類",
+      "name": "1+1.",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "360",
+      "code": "QS15001001",
+      "category": "點心類",
+      "name": "1+1(火腿)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "361",
+      "code": "QS15001002",
+      "category": "點心類",
+      "name": "1+1(起士)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "362",
+      "code": "QS15001003",
+      "category": "點心類",
+      "name": "1+1(玉米)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "363",
+      "code": "QS15001004",
+      "category": "點心類",
+      "name": "1+1(九層塔)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "364",
+      "code": "QS15001005",
+      "category": "點心類",
+      "name": "1+1(培根)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "365",
+      "code": "QS15001006",
+      "category": "點心類",
+      "name": "1+1(鮪魚)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "366",
+      "code": "QS15001007",
+      "category": "點心類",
+      "name": "1+1(里肌豬排)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "367",
+      "code": "QS15001008",
+      "category": "點心類",
+      "name": "1+1(怪怪總匯)",
+      "price": 100,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "368",
+      "code": "QS15001009",
+      "category": "點心類",
+      "name": "1+1(100%肉鬆)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "369",
+      "code": "QS15001100",
+      "category": "點心類",
+      "name": "經典香蔥脆薯",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "370",
+      "code": "QS15001300",
+      "category": "點心類",
+      "name": "麥克雞塊",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "371",
+      "code": "QS15001400",
+      "category": "點心類",
+      "name": "雞米花",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "372",
+      "code": "QS15001500",
+      "category": "點心類",
+      "name": "薯餅起士蛋塔",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "373",
+      "code": "QS15001600",
+      "category": "點心類",
+      "name": "餐包(2顆)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "374",
+      "code": "QS15001700",
+      "category": "點心類",
+      "name": "玉米蛋",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "375",
+      "code": "QS15002300",
+      "category": "點心類",
+      "name": "冰火菠蘿油",
+      "price": 59,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "376",
+      "code": "QS15002301",
+      "category": "點心類",
+      "name": "(花生)冰火菠蘿油",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "377",
+      "code": "QS15003100",
+      "category": "點心類",
+      "name": "地瓜QQ球",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "378",
+      "code": "QS15004200",
+      "category": "點心類",
+      "name": "香煎豬(單)",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "379",
+      "code": "QS15004300",
+      "category": "點心類",
+      "name": "脆脆奶油豬",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "380",
+      "code": "QS15004700",
+      "category": "點心類",
+      "name": "德式香腸(單)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "381",
+      "code": "QS15005200",
+      "category": "點心類",
+      "name": "歐式圓包",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "382",
+      "code": "QS15005403",
+      "category": "點心類",
+      "name": "鍋燒-外送加菜",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "383",
+      "code": "QS15005404",
+      "category": "點心類",
+      "name": "鍋燒-外送加火鍋料",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "384",
+      "code": "QS15005405",
+      "category": "點心類",
+      "name": "鍋燒-外送加里肌豬",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "385",
+      "code": "QS15005407",
+      "category": "點心類",
+      "name": "(專用)鍋燒-外送加蛋",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "386",
+      "code": "QS15006400",
+      "category": "點心類",
+      "name": "芝麻地瓜可樂餅",
+      "price": 49,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "387",
+      "code": "QS15006500",
+      "category": "點心類",
+      "name": "波浪薯條(蕃茄醬)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "388",
+      "code": "QS15006600",
+      "category": "點心類",
+      "name": "QB經典雙薯(蕃茄醬)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "389",
+      "code": "QS15006601",
+      "category": "點心類",
+      "name": "QB經典雙薯(蜂蜜芥末醬)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "390",
+      "code": "QS15006700",
+      "category": "點心類",
+      "name": "波浪薯條(蜂蜜芥末醬)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "391",
+      "code": "QS15006800",
+      "category": "點心類",
+      "name": "港式瑞士汁雞翼",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "392",
+      "code": "QS15006900",
+      "category": "點心類",
+      "name": "咖哩魚蛋",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "393",
+      "code": "QS16000100",
+      "category": "鐵板麵、炒泡麵",
+      "name": "黑麵",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "394",
+      "code": "QS16000101",
+      "category": "鐵板麵、炒泡麵",
+      "name": "黑麵(油麵)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "395",
+      "code": "QS16000200",
+      "category": "鐵板麵、炒泡麵",
+      "name": "蘑菇麵",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "396",
+      "code": "QS16000201",
+      "category": "鐵板麵、炒泡麵",
+      "name": "蘑菇麵(油麵)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "397",
+      "code": "QS16000300",
+      "category": "鐵板麵、炒泡麵",
+      "name": "沙茶麵",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "398",
+      "code": "QS16000301",
+      "category": "鐵板麵、炒泡麵",
+      "name": "沙茶麵(烏龍)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "399",
+      "code": "QS16000800",
+      "category": "鐵板麵、炒泡麵",
+      "name": "招牌炒泡麵-組",
+      "price": 105,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "400",
+      "code": "QS16000801",
+      "category": "鐵板麵、炒泡麵",
+      "name": "招牌炒泡麵",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "401",
+      "code": "QS16000900",
+      "category": "鐵板麵、炒泡麵",
+      "name": "椒麻炒泡麵-組",
+      "price": 110,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "402",
+      "code": "QS16000901",
+      "category": "鐵板麵、炒泡麵",
+      "name": "椒麻炒泡麵",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "403",
+      "code": "QS16002100",
+      "category": "鐵板麵、炒泡麵",
+      "name": "帶骨豬扒撈公仔麵",
+      "price": 155,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "404",
+      "code": "QS16002101",
+      "category": "鐵板麵、炒泡麵",
+      "name": "炸豬排咖哩撈公仔麵",
+      "price": 150,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "405",
+      "code": "QS16002102",
+      "category": "鐵板麵、炒泡麵",
+      "name": "咖哩魚蛋炸豬排撈公仔麵",
+      "price": 168,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "406",
+      "code": "QS16002103",
+      "category": "鐵板麵、炒泡麵",
+      "name": "帶骨豬扒咖哩撈公仔麵",
+      "price": 180,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "407",
+      "code": "QS16002104",
+      "category": "鐵板麵、炒泡麵",
+      "name": "咖哩魚蛋帶骨豬扒撈公仔麵",
+      "price": 198,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "408",
+      "code": "QS17000200",
+      "category": "單點類",
+      "name": "卡啦雞(單)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "409",
+      "code": "QS17000300",
+      "category": "單點類",
+      "name": "歐姆蛋(單)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "410",
+      "code": "QS17000500",
+      "category": "單點類",
+      "name": "火腿(單)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "411",
+      "code": "QS17000600",
+      "category": "單點類",
+      "name": "培根(單)",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "412",
+      "code": "QS17000700",
+      "category": "單點類",
+      "name": "麥香雞(單)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "413",
+      "code": "QS17000800",
+      "category": "單點類",
+      "name": "里肌豬排(單)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "414",
+      "code": "QS17000900",
+      "category": "單點類",
+      "name": "鱈魚(單)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "415",
+      "code": "QS17001100",
+      "category": "單點類",
+      "name": "菲力雞(單)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "416",
+      "code": "QS17001200",
+      "category": "單點類",
+      "name": "照燒牛肉(單)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "417",
+      "code": "QS17001500",
+      "category": "單點類",
+      "name": "蜜汁嫩雞腿(單)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "418",
+      "code": "QS17001600",
+      "category": "單點類",
+      "name": "歐姆蛋包(單)",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "419",
+      "code": "QS17001700",
+      "category": "單點類",
+      "name": "起司一片(單)",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "420",
+      "code": "QS17001800",
+      "category": "單點類",
+      "name": "嫩脆雞胸(單)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "421",
+      "code": "QS17001900",
+      "category": "單點類",
+      "name": "A餐.搭脆薯",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "422",
+      "code": "QS17002000",
+      "category": "單點類",
+      "name": "B餐.搭沙拉",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "423",
+      "code": "QS17002100",
+      "category": "單點類",
+      "name": "C餐.搭雞塊",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "424",
+      "code": "QS17002200",
+      "category": "單點類",
+      "name": "D餐.搭地瓜球",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "425",
+      "code": "QS17002300",
+      "category": "單點類",
+      "name": "E餐.搭脆薯(大)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "426",
+      "code": "QS17002400",
+      "category": "單點類",
+      "name": "馬鈴薯沙拉",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "427",
+      "code": "QS17002500",
+      "category": "單點類",
+      "name": "金牌蘿蔔糕(童)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "428",
+      "code": "QS17002600",
+      "category": "單點類",
+      "name": "外送-兒童-鱈魚(單)",
+      "price": 47,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "429",
+      "code": "QS17900100",
+      "category": "單點類",
+      "name": "糖醋醬",
+      "price": 5,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "430",
+      "code": "QS18000100",
+      "category": "研磨咖啡",
+      "name": "特調咖啡[中]",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "431",
+      "code": "QS18000110",
+      "category": "研磨咖啡",
+      "name": "特調咖啡[中](促)",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "432",
+      "code": "QS18000200",
+      "category": "研磨咖啡",
+      "name": "特調咖啡[大]",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "433",
+      "code": "QS18000210",
+      "category": "研磨咖啡",
+      "name": "特調咖啡[大](促)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "434",
+      "code": "QS18000300",
+      "category": "研磨咖啡",
+      "name": "美式咖啡[中]",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "435",
+      "code": "QS18000310",
+      "category": "研磨咖啡",
+      "name": "美式咖啡[中](促)",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "436",
+      "code": "QS18000400",
+      "category": "研磨咖啡",
+      "name": "美式咖啡[大]",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "437",
+      "code": "QS18000410",
+      "category": "研磨咖啡",
+      "name": "美式咖啡[大](促)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "438",
+      "code": "QS18000440",
+      "category": "研磨咖啡",
+      "name": "美式(大) 外送買一送一",
+      "price": 91,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "439",
+      "code": "QS18000500",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[中]熱",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "440",
+      "code": "QS18000501",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[中]涼",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "441",
+      "code": "QS18000502",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[中]冰",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "442",
+      "code": "QS18000510",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[中]熱(促)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "443",
+      "code": "QS18000511",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[中]涼(促)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "444",
+      "code": "QS18000512",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[中]冰(促)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "445",
+      "code": "QS18000600",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[大]熱",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "446",
+      "code": "QS18000601",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[大]涼",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "447",
+      "code": "QS18000602",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[大]冰",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "448",
+      "code": "QS18000610",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[大]熱(促)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "449",
+      "code": "QS18000611",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[大]涼(促)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "450",
+      "code": "QS18000612",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[大]冰(促)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "451",
+      "code": "QS18000800",
+      "category": "研磨咖啡",
+      "name": "榛果風味拿鐵(中)熱",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "452",
+      "code": "QS18000801",
+      "category": "研磨咖啡",
+      "name": "榛果風味拿鐵(中)涼",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "453",
+      "code": "QS18000802",
+      "category": "研磨咖啡",
+      "name": "榛果風味拿鐵(中)冰",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "454",
+      "code": "QS18000810",
+      "category": "研磨咖啡",
+      "name": "榛果風味拿鐵(中)熱(促)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "455",
+      "code": "QS18000811",
+      "category": "研磨咖啡",
+      "name": "榛果風味拿鐵(中)涼(促)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "456",
+      "code": "QS18000812",
+      "category": "研磨咖啡",
+      "name": "榛果風味拿鐵(中)冰(促)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "457",
+      "code": "QS18002300",
+      "category": "研磨咖啡",
+      "name": "美式咖啡[特大]",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "458",
+      "code": "QS18002310",
+      "category": "研磨咖啡",
+      "name": "美式咖啡[特大](促)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "459",
+      "code": "QS18002400",
+      "category": "研磨咖啡",
+      "name": "特調咖啡[特大]",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "460",
+      "code": "QS18002410",
+      "category": "研磨咖啡",
+      "name": "特調咖啡[特大](促)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "461",
+      "code": "QS18002500",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[特大]熱",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "462",
+      "code": "QS18002510",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[特大]熱(促)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "463",
+      "code": "QS18002600",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[特大]冰",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "464",
+      "code": "QS18002610",
+      "category": "研磨咖啡",
+      "name": "鮮乳拿鐵[特大]冰(促)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "465",
+      "code": "QS18003120",
+      "category": "研磨咖啡",
+      "name": "蜜香美式(中)(促)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "466",
+      "code": "QS18003121",
+      "category": "研磨咖啡",
+      "name": "蜜香美式(大)(促)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "467",
+      "code": "QS18003122",
+      "category": "研磨咖啡",
+      "name": "蜜香美式(特大)(促)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "468",
+      "code": "QS18003230",
+      "category": "研磨咖啡",
+      "name": "蜜香拿鐵(中)冰(促)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "469",
+      "code": "QS18003231",
+      "category": "研磨咖啡",
+      "name": "蜜香拿鐵(中)熱(促)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "470",
+      "code": "QS18003232",
+      "category": "研磨咖啡",
+      "name": "蜜香拿鐵(大)冰(促)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "471",
+      "code": "QS18003233",
+      "category": "研磨咖啡",
+      "name": "蜜香拿鐵(大)熱(促)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "472",
+      "code": "QS18003234",
+      "category": "研磨咖啡",
+      "name": "蜜香拿鐵(特大)冰(促)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "473",
+      "code": "QS18003235",
+      "category": "研磨咖啡",
+      "name": "蜜香拿鐵(特大)熱(促)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "474",
+      "code": "QS18003300",
+      "category": "研磨咖啡",
+      "name": "焦糖風味拿鐵(中)冰",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "475",
+      "code": "QS18003301",
+      "category": "研磨咖啡",
+      "name": "焦糖風味拿鐵(中)熱",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "476",
+      "code": "QS18003320",
+      "category": "研磨咖啡",
+      "name": "焦糖拿鐵(中)熱(促)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "477",
+      "code": "QS18003321",
+      "category": "研磨咖啡",
+      "name": "焦糖拿鐵(中)冰(促)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "478",
+      "code": "QS18003500",
+      "category": "研磨咖啡",
+      "name": "鯊魚拿鐵 (8oz) -冰",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "479",
+      "code": "QS19000100",
+      "category": "飲料類",
+      "name": "紅茶[中]",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "480",
+      "code": "QS19000102",
+      "category": "飲料類",
+      "name": "套餐_紅茶[中]",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "481",
+      "code": "QS19000103",
+      "category": "飲料類",
+      "name": "APP特餐-紅茶(中)",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "482",
+      "code": "QS19000200",
+      "category": "飲料類",
+      "name": "紅茶[大]",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "483",
+      "code": "QS19000300",
+      "category": "飲料類",
+      "name": "奶茶[中]",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "484",
+      "code": "QS19000400",
+      "category": "飲料類",
+      "name": "奶茶[大]",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "485",
+      "code": "QS19000500",
+      "category": "飲料類",
+      "name": "鮮奶[中]",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "486",
+      "code": "QS19000700",
+      "category": "飲料類",
+      "name": "草莓調味乳",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "487",
+      "code": "QS19000800",
+      "category": "飲料類",
+      "name": "果汁調味乳",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "488",
+      "code": "QS19000900",
+      "category": "飲料類",
+      "name": "巧克力調味乳",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "489",
+      "code": "QS19001000",
+      "category": "飲料類",
+      "name": "麥芽調味乳",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "490",
+      "code": "QS19001160",
+      "category": "飲料類",
+      "name": "蘋果200冰茶(中)",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "491",
+      "code": "QS19001200",
+      "category": "飲料類",
+      "name": "鮮奶茶[中]",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "492",
+      "code": "QS19001301",
+      "category": "飲料類",
+      "name": "鮮奶茶[大]",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "493",
+      "code": "QS19001400",
+      "category": "飲料類",
+      "name": "柳橙汁[中]",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "494",
+      "code": "QS19001700",
+      "category": "飲料類",
+      "name": "阿華田[中]",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "495",
+      "code": "QS19001801",
+      "category": "飲料類",
+      "name": "阿華田[大]",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "496",
+      "code": "QS19001900",
+      "category": "飲料類",
+      "name": "豆漿[中]",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "497",
+      "code": "QS19001901",
+      "category": "飲料類",
+      "name": "豆漿[中]無糖",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "498",
+      "code": "QS19001902",
+      "category": "飲料類",
+      "name": "豆漿[中]半糖",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "499",
+      "code": "QS19002000",
+      "category": "飲料類",
+      "name": "豆漿[大]",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "500",
+      "code": "QS19002001",
+      "category": "飲料類",
+      "name": "豆漿[大]無糖",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "501",
+      "code": "QS19002002",
+      "category": "飲料類",
+      "name": "豆漿[大]半糖",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "502",
+      "code": "QS19002200",
+      "category": "飲料類",
+      "name": "港式奶茶(大)冰",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "503",
+      "code": "QS19002203",
+      "category": "飲料類",
+      "name": "港式奶茶(大)熱",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "504",
+      "code": "QS19002401",
+      "category": "飲料類",
+      "name": "凍檸碎碎冰茶(大)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "505",
+      "code": "QS19003300",
+      "category": "飲料類",
+      "name": "紅茶[特大]",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "506",
+      "code": "QS19003400",
+      "category": "飲料類",
+      "name": "奶茶[特大]",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "507",
+      "code": "QS19003500",
+      "category": "飲料類",
+      "name": "鮮奶茶[特大]",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "508",
+      "code": "QS19006300",
+      "category": "飲料類",
+      "name": "台灣四季春[大]冰",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "509",
+      "code": "QS19006301",
+      "category": "飲料類",
+      "name": "台灣四季春[大]熱",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "510",
+      "code": "QS19006302",
+      "category": "飲料類",
+      "name": "台灣四季春[特大]冰",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "511",
+      "code": "QS19006303",
+      "category": "飲料類",
+      "name": "台灣四季春[特大]熱",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "512",
+      "code": "QS19006412",
+      "category": "飲料類",
+      "name": "台灣四季春奶茶(大)冰",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "513",
+      "code": "QS19006413",
+      "category": "飲料類",
+      "name": "台灣四季春奶茶(大)熱",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "514",
+      "code": "QS19006414",
+      "category": "飲料類",
+      "name": "台灣四季春奶茶(特大)冰",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "515",
+      "code": "QS19006415",
+      "category": "飲料類",
+      "name": "台灣四季春奶茶(特大)熱",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "516",
+      "code": "QS19006600",
+      "category": "飲料類",
+      "name": "豆漿紅茶[大]冰",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "517",
+      "code": "QS19006601",
+      "category": "飲料類",
+      "name": "豆漿紅茶[大]熱",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "518",
+      "code": "QS19006602",
+      "category": "飲料類",
+      "name": "豆漿紅茶[特大]冰",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "519",
+      "code": "QS19006603",
+      "category": "飲料類",
+      "name": "豆漿紅茶[特大]熱",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "520",
+      "code": "QS19006604",
+      "category": "飲料類",
+      "name": "豆漿紅茶[大]冰無糖",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "521",
+      "code": "QS19006605",
+      "category": "飲料類",
+      "name": "豆漿紅茶[大]冰半糖",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "522",
+      "code": "QS19006606",
+      "category": "飲料類",
+      "name": "豆漿紅茶[大]熱無糖",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "523",
+      "code": "QS19006607",
+      "category": "飲料類",
+      "name": "豆漿紅茶[大]熱半糖",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "524",
+      "code": "QS19006608",
+      "category": "飲料類",
+      "name": "豆漿紅茶[特大]冰無糖",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "525",
+      "code": "QS19006609",
+      "category": "飲料類",
+      "name": "豆漿紅茶[特大]冰半糖",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "526",
+      "code": "QS19006610",
+      "category": "飲料類",
+      "name": "豆漿紅茶[特大]熱無糖",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "527",
+      "code": "QS19006611",
+      "category": "飲料類",
+      "name": "豆漿紅茶[特大]熱半糖",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "528",
+      "code": "QS19007601",
+      "category": "飲料類",
+      "name": "Q梅青茶(大)",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "529",
+      "code": "QS19007602",
+      "category": "飲料類",
+      "name": "Q梅青茶(特大)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "530",
+      "code": "QS19008600",
+      "category": "飲料類",
+      "name": "雲朵奶蓋紅茶(大) 冰",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "531",
+      "code": "QS19008601",
+      "category": "飲料類",
+      "name": "雲朵奶蓋紅茶(特大) 冰",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "532",
+      "code": "QS19008602",
+      "category": "飲料類",
+      "name": "雲朵奶蓋青茶(大) 冰",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "533",
+      "code": "QS19008603",
+      "category": "飲料類",
+      "name": "雲朵奶蓋青茶(特大) 冰",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "534",
+      "code": "QS19008700",
+      "category": "飲料類",
+      "name": "巨峰葡萄風味氣泡飲(大)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "535",
+      "code": "QS19014900",
+      "category": "飲料類",
+      "name": "青檸氣泡飲(大)",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "536",
+      "code": "QS19015000",
+      "category": "飲料類",
+      "name": "美梅氣泡飲-大",
+      "price": 60,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "537",
+      "code": "QS19015800",
+      "category": "飲料類",
+      "name": "太妃焦糖風味鮮奶茶(中)冰",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "538",
+      "code": "QS19015801",
+      "category": "飲料類",
+      "name": "太妃焦糖風味鮮奶茶(中)熱",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "539",
+      "code": "QS20000100",
+      "category": "加料類",
+      "name": "加蛋",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "540",
+      "code": "QS20000110",
+      "category": "加料類",
+      "name": "外送 加蛋",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "541",
+      "code": "QS20000120",
+      "category": "加料類",
+      "name": "員工餐-加蛋0元",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "542",
+      "code": "QS20000130",
+      "category": "加料類",
+      "name": "加高麗菜(大)",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "543",
+      "code": "QS20000131",
+      "category": "加料類",
+      "name": "外送-加高麗菜(大)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "544",
+      "code": "QS20000150",
+      "category": "加料類",
+      "name": "加咖哩魚蛋",
+      "price": 35,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "545",
+      "code": "QS20000151",
+      "category": "加料類",
+      "name": "外送-加咖哩魚蛋",
+      "price": 48,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "546",
+      "code": "QS20000200",
+      "category": "加料類",
+      "name": "加起司",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "547",
+      "code": "QS20000210",
+      "category": "加料類",
+      "name": "外送 加起司",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "548",
+      "code": "QS20000300",
+      "category": "加料類",
+      "name": "加里肌豬排",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "549",
+      "code": "QS20000400",
+      "category": "加料類",
+      "name": "加玉米",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "550",
+      "code": "QS20000500",
+      "category": "加料類",
+      "name": "加鮪魚",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "551",
+      "code": "QS20000600",
+      "category": "加料類",
+      "name": "加培根",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "552",
+      "code": "QS20000700",
+      "category": "加料類",
+      "name": "加火腿",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "553",
+      "code": "QS20000800",
+      "category": "加料類",
+      "name": "加九層塔",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "554",
+      "code": "QS20000900",
+      "category": "加料類",
+      "name": "加歐姆蛋包",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "555",
+      "code": "QS20001500",
+      "category": "加料類",
+      "name": "加草莓醬",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "556",
+      "code": "QS20001600",
+      "category": "加料類",
+      "name": "加花生醬",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "557",
+      "code": "QS20001700",
+      "category": "加料類",
+      "name": "加椰香醬",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "558",
+      "code": "QS20001800",
+      "category": "加料類",
+      "name": "加巧克力醬",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "559",
+      "code": "QS20001900",
+      "category": "加料類",
+      "name": "加奶油醬",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "560",
+      "code": "QS20002000",
+      "category": "加料類",
+      "name": "和風醬",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "561",
+      "code": "QS20002100",
+      "category": "加料類",
+      "name": "千島醬",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "562",
+      "code": "QS20003800",
+      "category": "加料類",
+      "name": "加糖醋醬",
+      "price": 5,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "563",
+      "code": "QS20006200",
+      "category": "加料類",
+      "name": "換起士嫩蛋可朗芙",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "564",
+      "code": "QS20006400",
+      "category": "加料類",
+      "name": "換雙重巧克可朗芙",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "565",
+      "code": "QS20006500",
+      "category": "加料類",
+      "name": "換蜂蜜可朗芙",
+      "price": 5,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "566",
+      "code": "QS20006700",
+      "category": "加料類",
+      "name": "換草莓煉乳可朗芙",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "567",
+      "code": "QS20006800",
+      "category": "加料類",
+      "name": "換花醬可朗芙",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "568",
+      "code": "QS20006900",
+      "category": "加料類",
+      "name": "換香蘋煉乳可朗芙",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "569",
+      "code": "QS20007001",
+      "category": "加料類",
+      "name": "加美生菜",
+      "price": 5,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "570",
+      "code": "QS20007010",
+      "category": "加料類",
+      "name": "外送-加生菜",
+      "price": 7,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "571",
+      "code": "QS20007200",
+      "category": "加料類",
+      "name": "加金牌蘿蔔糕(1片)",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "572",
+      "code": "QS20007300",
+      "category": "加料類",
+      "name": "加單點薯餅",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "573",
+      "code": "QS20007500",
+      "category": "加料類",
+      "name": "加燒肉",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "574",
+      "code": "QS20007510",
+      "category": "加料類",
+      "name": "外送 加燒肉",
+      "price": 45,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "575",
+      "code": "QS20007600",
+      "category": "加料類",
+      "name": "加乳酪絲",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "576",
+      "code": "QS20007610",
+      "category": "加料類",
+      "name": "外送 加乳酪",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "577",
+      "code": "QS20007800",
+      "category": "加料類",
+      "name": "加馬鈴薯沙拉",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "578",
+      "code": "QS20007900",
+      "category": "加料類",
+      "name": "玉米蛋-加料",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "579",
+      "code": "QS20007901",
+      "category": "加料類",
+      "name": "玉米蛋-外送",
+      "price": 30,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "580",
+      "code": "QS20008002",
+      "category": "加料類",
+      "name": "鍋燒_加青江菜",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "581",
+      "code": "QS20008003",
+      "category": "加料類",
+      "name": "鍋燒_加火鍋料",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "582",
+      "code": "QS20008004",
+      "category": "加料類",
+      "name": "鍋燒_加里肌豬排",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "583",
+      "code": "QS20008005",
+      "category": "加料類",
+      "name": "鍋燒-加蛋",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "584",
+      "code": "QS20008006",
+      "category": "加料類",
+      "name": "兒童_鱈魚(加購)",
+      "price": 40,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "585",
+      "code": "QS20008010",
+      "category": "加料類",
+      "name": "加沙茶",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "586",
+      "code": "QS20008011",
+      "category": "加料類",
+      "name": "外送 鍋燒_加意麵",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "587",
+      "code": "QS20008012",
+      "category": "加料類",
+      "name": "外送 鍋燒_加烏龍麵",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "588",
+      "code": "QS20008013",
+      "category": "加料類",
+      "name": "外送 鍋燒_加泡麵",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "589",
+      "code": "QS20008014",
+      "category": "加料類",
+      "name": "外送 鍋燒-加沙茶",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "590",
+      "code": "QS20008024",
+      "category": "加料類",
+      "name": "加炒蛋",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "591",
+      "code": "QS20008027",
+      "category": "加料類",
+      "name": "加鳳梨",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "592",
+      "code": "QS20008028",
+      "category": "加料類",
+      "name": "外送-加鳳梨",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "593",
+      "code": "QS20008200",
+      "category": "加料類",
+      "name": "加鹹豬肉半份",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "594",
+      "code": "QS20008201",
+      "category": "加料類",
+      "name": "外送-加鹹豬肉半份",
+      "price": 25,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "595",
+      "code": "QS20008300",
+      "category": "加料類",
+      "name": "加QB餐包",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "596",
+      "code": "QS20008301",
+      "category": "加料類",
+      "name": "外送-加QB餐包",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "597",
+      "code": "QS20008600",
+      "category": "加料類",
+      "name": "外送-加半熟蛋",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "598",
+      "code": "QS20008601",
+      "category": "加料類",
+      "name": "加半熟蛋",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "599",
+      "code": "QS20008800",
+      "category": "加料類",
+      "name": "加帶骨豬扒",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "600",
+      "code": "QS20031011",
+      "category": "加料類",
+      "name": "外送-加馬鈴薯沙拉",
+      "price": 20,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "601",
+      "code": "QS20051020",
+      "category": "加料類",
+      "name": "鍋燒-加高麗菜",
+      "price": 10,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "602",
+      "code": "QS20052020",
+      "category": "加料類",
+      "name": "外送 鍋燒-加高麗菜",
+      "price": 15,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "603",
+      "code": "QS22000100",
+      "category": "系統活動",
+      "name": "折抵券",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "604",
+      "code": "QS22000102",
+      "category": "系統活動",
+      "name": "現金折抵券10元",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "605",
+      "code": "QS22000103",
+      "category": "系統活動",
+      "name": "消費滿200元折20元",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "606",
+      "code": "QS22000200",
+      "category": "系統活動",
+      "name": "點數",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "607",
+      "code": "QS22000201",
+      "category": "系統活動",
+      "name": "APP系統計數使用",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "608",
+      "code": "QS22000300",
+      "category": "系統活動",
+      "name": "訂單折扣優惠",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "609",
+      "code": "QS22000301",
+      "category": "系統活動",
+      "name": "桌邊點餐折扣",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "610",
+      "code": "QS22000302",
+      "category": "系統活動",
+      "name": "優惠折扣",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "611",
+      "code": "QS22000420",
+      "category": "研磨咖啡",
+      "name": "鯊魚拿鐵(8oz)-冰(促)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "612",
+      "code": "QS22000500",
+      "category": "系統活動",
+      "name": "白蘭氏鷄精41ml",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "613",
+      "code": "QS23000200",
+      "category": "非賣餐收入",
+      "name": "其他收入",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "614",
+      "code": "QS26000102",
+      "category": "生菜堡",
+      "name": "卡啦雞腿(菜堡)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "615",
+      "code": "QS26000202",
+      "category": "生菜堡",
+      "name": "鱈魚(菜堡)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "616",
+      "code": "QS26000402",
+      "category": "生菜堡",
+      "name": "嫩脆雞胸(菜堡)",
+      "price": 85,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "617",
+      "code": "QS26000602",
+      "category": "生菜堡",
+      "name": "經典牛起士(菜堡)",
+      "price": 94,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "618",
+      "code": "QS26000702",
+      "category": "生菜堡",
+      "name": "蜜汁雞腿(菜堡)",
+      "price": 90,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "619",
+      "code": "QS26000900",
+      "category": "生菜堡",
+      "name": "里肌豬排(菜堡)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "620",
+      "code": "QS26001000",
+      "category": "生菜堡",
+      "name": "菲力雞(菜堡)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "621",
+      "code": "QS26001100",
+      "category": "生菜堡",
+      "name": "麥香雞(菜堡)",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "622",
+      "code": "QS26001200",
+      "category": "生菜堡",
+      "name": "牛肉起士(菜堡)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "623",
+      "code": "QS26001400",
+      "category": "生菜堡",
+      "name": "香煎豬(菜堡)",
+      "price": 55,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "624",
+      "code": "QS27000200",
+      "category": "烤餅類",
+      "name": "花生乳酪烤餅",
+      "price": 50,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "625",
+      "code": "QS27000300",
+      "category": "烤餅類",
+      "name": "瑪格麗特烤餅",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "626",
+      "code": "QS28000100",
+      "category": "湯麵",
+      "name": "鮮蔬鍋燒(意麵)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "627",
+      "code": "QS28000101",
+      "category": "湯麵",
+      "name": "沙茶鮮蔬鍋燒(意麵)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "628",
+      "code": "QS28000200",
+      "category": "湯麵",
+      "name": "里肌豬排鍋燒(意麵)",
+      "price": 110,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "629",
+      "code": "QS28000201",
+      "category": "湯麵",
+      "name": "沙茶里肌豬排鍋燒(意麵)",
+      "price": 120,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "630",
+      "code": "QS28000300",
+      "category": "湯麵",
+      "name": "鮮蔬鍋燒(泡麵)",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "631",
+      "code": "QS28000301",
+      "category": "湯麵",
+      "name": "沙茶鮮蔬鍋燒(泡麵)",
+      "price": 80,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "632",
+      "code": "QS28000400",
+      "category": "湯麵",
+      "name": "里肌豬排鍋燒(泡麵)",
+      "price": 115,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "633",
+      "code": "QS28000401",
+      "category": "湯麵",
+      "name": "沙茶里肌豬排鍋燒(泡麵)",
+      "price": 125,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "634",
+      "code": "QS28000500",
+      "category": "湯麵",
+      "name": "鮮蔬鍋燒(烏龍麵)",
+      "price": 65,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "635",
+      "code": "QS28000501",
+      "category": "湯麵",
+      "name": "沙茶鮮蔬鍋燒(烏龍麵)",
+      "price": 75,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "636",
+      "code": "QS28000600",
+      "category": "湯麵",
+      "name": "里肌豬排鍋燒(烏龍麵)",
+      "price": 110,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "637",
+      "code": "QS28000601",
+      "category": "湯麵",
+      "name": "沙茶里肌豬排鍋燒(烏龍麵)",
+      "price": 120,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "638",
+      "code": "QS28001300",
+      "category": "湯麵",
+      "name": "炸豬排咖哩湯麵(油麵)",
+      "price": 150,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "639",
+      "code": "QS28001301",
+      "category": "湯麵",
+      "name": "炸豬排咖哩湯烏冬",
+      "price": 150,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "640",
+      "code": "QS28001400",
+      "category": "湯麵",
+      "name": "咖哩魚蛋炸豬排湯麵(油麵)",
+      "price": 168,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "641",
+      "code": "QS28001401",
+      "category": "湯麵",
+      "name": "咖哩魚蛋炸豬排湯烏冬",
+      "price": 168,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "642",
+      "code": "QS28001500",
+      "category": "湯麵",
+      "name": "帶骨豬扒咖哩湯烏冬",
+      "price": 180,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "643",
+      "code": "QS28001501",
+      "category": "湯麵",
+      "name": "帶骨豬扒咖哩湯麵(油麵)",
+      "price": 180,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "644",
+      "code": "QS28001600",
+      "category": "湯麵",
+      "name": "咖哩魚蛋帶骨豬扒湯麵(油麵)",
+      "price": 198,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "645",
+      "code": "QS28001601",
+      "category": "湯麵",
+      "name": "咖哩魚蛋帶骨豬扒湯烏冬",
+      "price": 198,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "646",
+      "code": "QS57001000",
+      "category": "烤餅類",
+      "name": "夏威夷烤餅",
+      "price": 70,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "647",
+      "code": "QS98000100",
+      "category": "套餐",
+      "name": "員工餐(餐點)",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "648",
+      "code": "QS98000101",
+      "category": "套餐",
+      "name": "員工餐(飲料)",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "649",
+      "code": "QS98000200",
+      "category": "套餐",
+      "name": "開幕兌換券",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "650",
+      "code": "QS98000252",
+      "category": "套餐",
+      "name": "三明治活動*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "651",
+      "code": "QS98100101",
+      "category": "漢堡類",
+      "name": "芝麻漢堡組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "652",
+      "code": "QS98100203",
+      "category": "吐司/總匯類",
+      "name": "吐司總匯組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "653",
+      "code": "QS98101203",
+      "category": "套餐",
+      "name": "鍋燒麵*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "654",
+      "code": "QS9810124",
+      "category": "經典盤餐",
+      "name": "搭配超值組合*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "655",
+      "code": "QS98101241",
+      "category": "蛋餅抓餅類",
+      "name": "蛋餅抓餅組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "656",
+      "code": "QS98101253",
+      "category": "套餐",
+      "name": "港澳站專區組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "657",
+      "code": "QS98101254",
+      "category": "套餐",
+      "name": "限時新品組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "658",
+      "code": "QS98101256",
+      "category": "可朗芙",
+      "name": "可朗芙組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "659",
+      "code": "QS98101257",
+      "category": "烤餅類",
+      "name": "烤餅組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "660",
+      "code": "QS98101258",
+      "category": "輕享新食尚",
+      "name": "輕享新食尚組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "661",
+      "code": "QS98101259",
+      "category": "墨西哥捲",
+      "name": "墨西哥捲餅組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "662",
+      "code": "QS98500107",
+      "category": "半成品",
+      "name": "紅茶茶底(1500ML)",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "663",
+      "code": "QS98500108",
+      "category": "半成品",
+      "name": "鮪魚醬(34G/匙)",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "664",
+      "code": "QS98500109",
+      "category": "半成品",
+      "name": "四季春茶茶底(500ML)",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "665",
+      "code": "QS98500110",
+      "category": "半成品",
+      "name": "奶油玉米濃湯(180ML)",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "666",
+      "code": "QS98500111",
+      "category": "半成品",
+      "name": "港紅茶底(500ML)",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "667",
+      "code": "QS98500112",
+      "category": "半成品",
+      "name": "萃茶機紅茶茶底(1500ML)",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "668",
+      "code": "QS98500113",
+      "category": "半成品",
+      "name": "奶蓋(50g)",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "669",
+      "code": "QS98500203",
+      "category": "套餐",
+      "name": "芝麻漢堡*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "670",
+      "code": "QS98500303",
+      "category": "套餐",
+      "name": "吐司總匯*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "671",
+      "code": "QS98500401",
+      "category": "鐵板麵、炒泡麵",
+      "name": "鐵板麵組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "672",
+      "code": "QS98500403",
+      "category": "套餐",
+      "name": "經典盤餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "673",
+      "code": "QS98500404",
+      "category": "生菜堡",
+      "name": "鮮蔬堡組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "674",
+      "code": "QS98500405",
+      "category": "經典盤餐",
+      "name": "經典盤餐組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "675",
+      "code": "QS98500501",
+      "category": "套餐",
+      "name": "墨西哥捲*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "676",
+      "code": "QS98500601",
+      "category": "套餐",
+      "name": "鐵板麵*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "677",
+      "code": "QS98500702",
+      "category": "套餐",
+      "name": "可朗芙*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "678",
+      "code": "QS98500801",
+      "category": "套餐",
+      "name": "【套餐】鮪魚蛋餅+紅茶(中)",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "679",
+      "code": "QS98500802",
+      "category": "套餐",
+      "name": "蛋餅抓餅*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "680",
+      "code": "QS98500904",
+      "category": "套餐",
+      "name": "義麵燉飯*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "681",
+      "code": "QS98500905",
+      "category": "義大利麵、燉飯",
+      "name": "義麵燉飯組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "682",
+      "code": "QS98501000",
+      "category": "湯麵",
+      "name": "鍋燒麵組合餐*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "683",
+      "code": "QS98501200",
+      "category": "套餐",
+      "name": "Happy 50快樂餐",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "684",
+      "code": "QS98501201",
+      "category": "套餐",
+      "name": "加價/單點*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "685",
+      "code": "QS98501206",
+      "category": "套餐",
+      "name": "貝果軟法*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "686",
+      "code": "QS98501301",
+      "category": "套餐",
+      "name": "飲料/咖啡*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "687",
+      "code": "QS98501402",
+      "category": "套餐",
+      "name": "本券於APP訂餐或門市刷讀無效",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "688",
+      "code": "QS98501404",
+      "category": "套餐",
+      "name": "和牛布里歐堡雙人餐",
+      "price": 594,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "689",
+      "code": "QS98502210",
+      "category": "套餐",
+      "name": "紅茶請外送員",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "690",
+      "code": "QS98502304",
+      "category": "套餐",
+      "name": "烤餅*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "691",
+      "code": "QS98502603",
+      "category": "套餐",
+      "name": "外送平台買一送一*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "692",
+      "code": "QS98900200",
+      "category": "套餐",
+      "name": "三明治25元",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    },
+    {
+      "id": "693",
+      "code": "QS98900410",
+      "category": "套餐",
+      "name": "盒裝三明治搭配飲品折5元*",
+      "price": 0,
+      "imageUrl": "",
+      "optionsGroup": "DEFAULT"
+    }
+  ],
+  "options": [
+    {
+      "name": "蛋全熟",
+      "group": "蛋熟度",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "蛋半熟",
+      "group": "蛋熟度",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "散蛋",
+      "group": "蛋料理方式",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "嫩蛋",
+      "group": "蛋料理方式",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不烤",
+      "group": "不烤",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "微烤",
+      "group": "微烤",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "烤酥",
+      "group": "烤酥",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "焦一點",
+      "group": "焦一點",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "對切",
+      "group": "對切、不切",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不切",
+      "group": "對切、不切",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "切邊",
+      "group": "切邊",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不玉米",
+      "group": "不玉米",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不沙拉",
+      "group": "沙拉醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "少沙拉",
+      "group": "沙拉醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "多沙拉",
+      "group": "沙拉醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不番茄醬",
+      "group": "不番茄醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不花生醬",
+      "group": "不花生醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不花生角",
+      "group": "不花生角",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "全部不醬",
+      "group": "全醬料份量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "全部少醬",
+      "group": "全醬料份量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "少菜",
+      "group": "生菜份量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不菜",
+      "group": "生菜份量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不洋蔥",
+      "group": "不洋蔥",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不小黃瓜",
+      "group": "不小黃瓜",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不蕃茄片",
+      "group": "不蕃茄片",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不胡椒",
+      "group": "白胡椒粉量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "多胡椒",
+      "group": "白胡椒粉量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不黑胡椒",
+      "group": "不黑胡椒粒",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不調味香料",
+      "group": "不調味香料",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不醬油",
+      "group": "不醬油",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "小辣",
+      "group": "加辣",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "中辣",
+      "group": "加辣",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "大辣",
+      "group": "加辣",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "醬另外放",
+      "group": "醬另外放",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不起司粉",
+      "group": "不起司粉",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "冰",
+      "group": "溫度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "涼",
+      "group": "溫度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "溫",
+      "group": "溫度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "熱",
+      "group": "溫度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "涼",
+      "group": "奶品-溫度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "溫",
+      "group": "奶品-溫度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "熱",
+      "group": "奶品-溫度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "無糖",
+      "group": "飲料-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "3分糖",
+      "group": "飲料-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "5分糖",
+      "group": "飲料-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "7分糖",
+      "group": "飲料-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "加冰塊",
+      "group": "加冰塊",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "3分糖",
+      "group": "無糖咖啡-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "5分糖",
+      "group": "無糖咖啡-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "7分糖",
+      "group": "無糖咖啡-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "正常糖",
+      "group": "無糖咖啡-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "多糖",
+      "group": "無糖咖啡-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "多冰",
+      "group": "多冰、少冰",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "少冰",
+      "group": "多冰、少冰",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不醬",
+      "group": "不醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "加胡椒",
+      "group": "加胡椒",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "奶球另附",
+      "group": "奶球另附",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "糖球另附",
+      "group": "糖球另附",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "3分糖",
+      "group": "有糖咖啡-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "5分糖",
+      "group": "有糖咖啡-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "7分糖",
+      "group": "有糖咖啡-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "無糖",
+      "group": "有糖咖啡-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "正常糖",
+      "group": "有糖咖啡-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "多糖",
+      "group": "有糖咖啡-甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "內用杯",
+      "group": "內用杯",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "封口",
+      "group": "封口",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "外帶杯",
+      "group": "外帶杯",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "自備杯",
+      "group": "自備杯",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "外帶",
+      "group": "外帶",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "放一起",
+      "group": "放一起",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "特製",
+      "group": "特製",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "涼",
+      "group": "模範飲料-涼",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不醬",
+      "group": "醬料份量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "少醬",
+      "group": "醬料份量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "多醬",
+      "group": "醬料份量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "A組合",
+      "group": "盤餐A.B.C",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "B組合",
+      "group": "盤餐A.B.C",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "C組合",
+      "group": "盤餐A.B.C",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "D組合",
+      "group": "盤餐A.B.C",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不加糖粉",
+      "group": "無糖粉",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不芥末醬",
+      "group": "不芥末醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不九層塔",
+      "group": "不九層塔",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "裝盒",
+      "group": "裝盒子",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "無糖",
+      "group": "甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "5分糖",
+      "group": "甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "全糖",
+      "group": "甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不沙拉",
+      "group": "不沙拉醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "冰",
+      "group": "冰、少冰",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "少冰",
+      "group": "冰、少冰",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "熱",
+      "group": "熱",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "溫",
+      "group": "熱",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不乳酪絲",
+      "group": "不乳酪絲",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "少花生醬",
+      "group": "少花生醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "溫",
+      "group": "模範飲料-溫",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "半糖",
+      "group": "模範飲料-半糖",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "無糖",
+      "group": "模範飲料-無糖",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不紫高麗菜",
+      "group": "不紫高麗菜",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不千島",
+      "group": "不千島醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不小蕃茄",
+      "group": "不小蕃茄",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不五彩球",
+      "group": "五彩球",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "體驗活動",
+      "group": "體驗活動-創英店",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不花椰",
+      "group": "創英-鐵板套餐",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不切",
+      "group": "不切",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "半糖",
+      "group": "甜度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不高麗菜",
+      "group": "不高麗菜",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "要切",
+      "group": "要切",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "炸酥",
+      "group": "炸酥",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不紅薑絲",
+      "group": "不紅薑絲",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不柴魚片",
+      "group": "不柴魚片",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不白醬",
+      "group": "不白醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "少醬",
+      "group": "少醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不花椰菜",
+      "group": "不花椰菜",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不核桃",
+      "group": "不核桃",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不馬鈴薯泥",
+      "group": "不馬鈴薯泥",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不小番茄",
+      "group": "不小番茄",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "換荷包蛋",
+      "group": "換荷包蛋",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不青江菜",
+      "group": "不青江菜",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "正常冰",
+      "group": "冰度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "少冰",
+      "group": "冰度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "去冰",
+      "group": "冰度調整",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "蛋半熟",
+      "group": "蛋熟",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "蛋全熟",
+      "group": "蛋熟",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "溫",
+      "group": "飲品溫度(現萃茶)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "熱",
+      "group": "飲品溫度(現萃茶)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "正常冰",
+      "group": "飲品溫度(現萃茶)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "少冰",
+      "group": "飲品溫度(現萃茶)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "去冰",
+      "group": "飲品溫度(現萃茶)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "全糖",
+      "group": "調味-飲品甜度(現萃茶)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "7分糖",
+      "group": "調味-飲品甜度(現萃茶)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "5分糖",
+      "group": "調味-飲品甜度(現萃茶)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "3分糖",
+      "group": "調味-飲品甜度(現萃茶)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "無糖",
+      "group": "調味-飲品甜度(現萃茶)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不蔥花",
+      "group": "不蔥花",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不金針菇",
+      "group": "不金針菇",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不菜",
+      "group": "不菜",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不番茄片",
+      "group": "不番茄片",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不胡椒",
+      "group": "不胡椒",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不白胡椒",
+      "group": "不白胡椒",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "冰",
+      "group": "飲品溫度(美式)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "熱",
+      "group": "飲品溫度(美式)",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不橙香醬",
+      "group": "不橙香醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不乾酪粉",
+      "group": "不乾酪粉",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不馬鈴薯",
+      "group": "不馬鈴薯",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不美乃滋",
+      "group": "美乃滋份量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "少美乃滋",
+      "group": "美乃滋份量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "多美乃滋",
+      "group": "美乃滋份量",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不蜂蜜芥末醬",
+      "group": "不蜂蜜芥末醬",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不奶油",
+      "group": "奶油",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "蘿蔔糕焦一點",
+      "group": "拼盤調味",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "蘿蔔糕要切",
+      "group": "拼盤調味",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不煉乳",
+      "group": "拼盤調味",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不糖",
+      "group": "拼盤調味",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不美奶滋",
+      "group": "美奶滋",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "不煉乳",
+      "group": "煉乳",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "加辣",
+      "group": "加辣",
+      "price": 0,
+      "optionType": "FLAVOR"
+    },
+    {
+      "name": "加糖醋醬",
+      "group": "加料",
+      "price": 5,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加美生菜",
+      "group": "加料",
+      "price": 5,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加生菜",
+      "group": "加料",
+      "price": 7,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加奶油醬",
+      "group": "加料",
+      "price": 10,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加巧克力醬",
+      "group": "加料",
+      "price": 10,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加椰香醬",
+      "group": "加料",
+      "price": 10,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加沙茶",
+      "group": "加料",
+      "price": 10,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加花生醬",
+      "group": "加料",
+      "price": 10,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加草莓醬",
+      "group": "加料",
+      "price": 10,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加起司",
+      "group": "加料",
+      "price": 10,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加青江菜",
+      "group": "加料",
+      "price": 10,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "鍋燒-加高麗菜",
+      "group": "加料",
+      "price": 10,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "(專)加蛋",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加九層塔",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加乳酪絲",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加半熟蛋",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加料-QB餐包",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加火腿",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加火鍋料",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加玉米",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加蛋",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加馬鈴薯沙拉",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送 鍋燒-加高麗菜",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加沙茶",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加起司",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加青江菜",
+      "group": "加料",
+      "price": 15,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加料-外送QB餐包",
+      "group": "加料",
+      "price": 20,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加料-外送馬鈴薯沙拉",
+      "group": "加料",
+      "price": 20,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加歐姆蛋包",
+      "group": "加料",
+      "price": 20,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加炒蛋",
+      "group": "加料",
+      "price": 20,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加高麗菜(大)",
+      "group": "加料",
+      "price": 20,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加鹹豬肉半份",
+      "group": "加料",
+      "price": 20,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加乳酪絲",
+      "group": "加料",
+      "price": 20,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加半熟蛋",
+      "group": "加料",
+      "price": 20,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加火鍋料",
+      "group": "加料",
+      "price": 20,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加蛋",
+      "group": "加料",
+      "price": 20,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加蛋(專)",
+      "group": "加料",
+      "price": 20,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "●加金牌蘿蔔糕(1片)",
+      "group": "加料",
+      "price": 25,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加培根",
+      "group": "加料",
+      "price": 25,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加玉米蛋",
+      "group": "加料",
+      "price": 25,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加鮪魚",
+      "group": "加料",
+      "price": 25,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加高麗菜(大)",
+      "group": "加料",
+      "price": 25,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加鹹豬肉半份",
+      "group": "加料",
+      "price": 25,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-炒蛋",
+      "group": "加料",
+      "price": 25,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加燒肉",
+      "group": "加料",
+      "price": 30,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加玉米蛋",
+      "group": "加料",
+      "price": 30,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加咖哩魚蛋",
+      "group": "加料",
+      "price": 35,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加里肌豬排",
+      "group": "加料",
+      "price": 40,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "加鱈魚",
+      "group": "加料",
+      "price": 40,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加燒肉",
+      "group": "加料",
+      "price": 45,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加里肌豬排",
+      "group": "加料",
+      "price": 45,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-兒童-鱈魚(單)",
+      "group": "加料",
+      "price": 47,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "外送-加咖哩魚蛋",
+      "group": "加料",
+      "price": 48,
+      "optionType": "ADDON"
+    },
+    {
+      "name": "限時優惠-加帶骨豬排",
+      "group": "加料",
+      "price": 80,
+      "optionType": "ADDON"
+    }
+  ]
+}

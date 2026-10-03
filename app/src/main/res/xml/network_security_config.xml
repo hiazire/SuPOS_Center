@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 全局預設強制要求 HTTPS -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- 僅對特定伺服器與本機除錯開放 HTTP 明文傳輸 -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Q Burger 總部 WCF 接單伺服器 -->
+        <domain includeSubdomains="false">103.234.81.171</domain>
+        <!-- 本機 / 模擬器除錯端點 -->
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">127.0.0.1</domain>
+        <domain includeSubdomains="false">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>

@@ -52,9 +52,10 @@ import kotlin.math.roundToInt
 
 import com.example.supos.data.model.CartItem
 import com.example.supos.data.local.entity.OptionItemEntity
+import com.example.supos.ui.main.PosDesignTokens
 
 // ─────────────────────────────────────────────
-// iPad-style 三層點餐介面 + 底部客製化選項面板
+// Windows POS 對齊的固定分類／商品格 + 底部客製化選項面板
 //  上層: 分類按鍵格 (可左右滑動)
 //  中層: 該分類的品項格 (可左右滑動)
 //  下中: 翻頁控制 + 頁碼
@@ -75,12 +76,13 @@ fun MenuColumn(
     onOptionClick: (OptionItemEntity) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val categories = allItems.map { it.category }.filter { it.isNotBlank() }.distinct().sorted()
+    // 依權威菜單回傳順序呈現，不在裝置端重新排序，以保留門市肌肉記憶。
+    val categories = allItems.map { it.category }.filter { it.isNotBlank() }.distinct()
     val filteredItems = if (selectedCategory != null) {
         allItems.filter { it.category == selectedCategory }
     } else emptyList()
 
-    Column(modifier = modifier.fillMaxSize().background(Color(0xFFF8F8F8))) {
+    Column(modifier = modifier.fillMaxSize().background(PosDesignTokens.PanelBackground)) {
         // ── 上層：分類格 (佔 22%) ──
         CategoryGrid(
             categories = categories,
@@ -93,7 +95,7 @@ fun MenuColumn(
                 .weight(0.22f)
         )
 
-        HorizontalDivider(color = Color(0xFFDDDDDD))
+        HorizontalDivider(color = PosDesignTokens.Divider)
 
         // ── 中層：品項格 (佔 38%) ──
         ItemGrid(
@@ -106,7 +108,7 @@ fun MenuColumn(
                 .weight(0.38f)
         )
 
-        HorizontalDivider(color = Color(0xFFDDDDDD))
+        HorizontalDivider(color = PosDesignTokens.Divider)
 
         // ── 底部：翻頁按鈕 (佔 12%) ──
         PageNavigationBar(
@@ -123,7 +125,7 @@ fun MenuColumn(
                 .weight(0.12f)
         )
 
-        HorizontalDivider(color = Color(0xFFDDDDDD))
+        HorizontalDivider(color = PosDesignTokens.Divider)
 
         // ── 最底層：客製化選項面板 (佔 28%) ──
         OptionsBottomPanel(
@@ -137,7 +139,7 @@ fun MenuColumn(
     }
 }
 
-private const val CATEGORIES_PER_PAGE = 10 // 5欄 × 2列
+private const val CATEGORIES_PER_PAGE = 18 // 6欄 × 3列，接近 Windows POS 固定分類格
 private const val ITEMS_PER_PAGE = 15       // 5欄 × 3列
 
 private fun calcTotalPages(count: Int, perPage: Int) = maxOf(1, Math.ceil(count.toDouble() / perPage).toInt())
@@ -159,7 +161,7 @@ private fun CategoryGrid(
 
     Column(
         modifier = modifier
-            .background(Color(0xFFF0F0F0))
+            .background(PosDesignTokens.PanelBackground)
             .onSizeChanged { containerWidthPx = it.width.toFloat() }
     ) {
         // 分頁容器（虛擬水平捲動）
@@ -197,12 +199,12 @@ private fun CategoryGrid(
                         modifier = Modifier
                             .width(with(density) { containerWidthPx.toDp() })
                             .fillMaxHeight()
-                            .padding(horizontal = 12.dp, vertical = 8.dp)
+                            .padding(horizontal = 4.dp, vertical = 4.dp)
                     ) {
                         LazyVerticalGrid(
-                            columns = GridCells.Fixed(5),
-                            horizontalArrangement = Arrangement.spacedBy(8.dp),
-                            verticalArrangement = Arrangement.spacedBy(8.dp),
+                            columns = GridCells.Fixed(6),
+                            horizontalArrangement = Arrangement.spacedBy(PosDesignTokens.ControlGap),
+                            verticalArrangement = Arrangement.spacedBy(PosDesignTokens.ControlGap),
                             modifier = Modifier.fillMaxSize()
                         ) {
                             items(pageCategories) { cat ->
@@ -218,22 +220,36 @@ private fun CategoryGrid(
             }
         }
 
-        // 小圓點頁碼
         if (totalPages > 1) {
             Row(
-                modifier = Modifier.fillMaxWidth().padding(bottom = 6.dp),
-                horizontalArrangement = Arrangement.Center,
+                modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 2.dp),
+                horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                repeat(totalPages) { idx ->
-                    Box(
-                        modifier = Modifier
-                            .padding(horizontal = 4.dp)
-                            .size(if (idx == currentPage) 10.dp else 7.dp)
-                            .clip(CircleShape)
-                            .background(if (idx == currentPage) Color(0xFF1976D2) else Color(0xFFCCCCCC))
-                    )
-                }
+                Text(
+                    text = "◀",
+                    color = if (currentPage > 0) Color.White else PosDesignTokens.TextDisabled,
+                    fontSize = 18.sp,
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(PosDesignTokens.ControlCorner))
+                        .clickable(enabled = currentPage > 0) { onPageChange(currentPage - 1) }
+                        .padding(horizontal = 20.dp, vertical = 2.dp)
+                )
+                Text(
+                    text = "分類 ${currentPage + 1} / $totalPages",
+                    color = PosDesignTokens.TextSecondary,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = "▶",
+                    color = if (currentPage < totalPages - 1) Color.White else PosDesignTokens.TextDisabled,
+                    fontSize = 18.sp,
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(PosDesignTokens.ControlCorner))
+                        .clickable(enabled = currentPage < totalPages - 1) { onPageChange(currentPage + 1) }
+                        .padding(horizontal = 20.dp, vertical = 2.dp)
+                )
             }
         }
     }
@@ -246,20 +262,15 @@ private fun CategoryButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val bgBrush = if (isSelected) {
-        Brush.verticalGradient(listOf(Color(0xFFFFB74D), Color(0xFFF57C00)))
-    } else {
-        Brush.verticalGradient(listOf(Color(0xFFBBDEFB), Color(0xFF90CAF9)))
-    }
+    val background = if (isSelected) PosDesignTokens.CategorySelected else PosDesignTokens.Category
 
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier
             .fillMaxWidth()
-            .height(52.dp)
-            .shadow(if (isSelected) 4.dp else 1.dp, RoundedCornerShape(10.dp))
-            .clip(RoundedCornerShape(10.dp))
-            .background(brush = bgBrush)
+            .height(48.dp)
+            .clip(RoundedCornerShape(PosDesignTokens.ControlCorner))
+            .background(background)
             .clickable(onClick = onClick)
             .padding(4.dp)
     ) {
@@ -267,7 +278,7 @@ private fun CategoryButton(
             text = label,
             fontSize = 15.sp,
             fontWeight = FontWeight.Bold,
-            color = if (isSelected) Color.White else Color(0xFF0D47A1),
+            color = Color.White,
             textAlign = TextAlign.Center,
             maxLines = 2,
             overflow = TextOverflow.Ellipsis
@@ -291,7 +302,7 @@ private fun ItemGrid(
 
     Box(
         modifier = modifier
-            .background(Color(0xFFFAFAFA))
+            .background(PosDesignTokens.PanelBackground)
             .onSizeChanged { containerWidthPx = it.width.toFloat() }
             .clip(RoundedCornerShape(0.dp))
             .pointerInput(totalPages, currentPage) {
@@ -310,7 +321,7 @@ private fun ItemGrid(
         if (items.isEmpty()) {
             Text(
                 text = "請先選擇分類",
-                color = Color.Gray,
+                color = PosDesignTokens.TextSecondary,
                 modifier = Modifier.align(Alignment.Center)
             )
         } else {
@@ -330,12 +341,12 @@ private fun ItemGrid(
                         modifier = Modifier
                             .width(with(density) { containerWidthPx.toDp() })
                             .fillMaxHeight()
-                            .padding(horizontal = 12.dp, vertical = 10.dp)
+                            .padding(horizontal = 4.dp, vertical = 6.dp)
                     ) {
                         LazyVerticalGrid(
                             columns = GridCells.Fixed(5),
-                            horizontalArrangement = Arrangement.spacedBy(8.dp),
-                            verticalArrangement = Arrangement.spacedBy(8.dp),
+                            horizontalArrangement = Arrangement.spacedBy(PosDesignTokens.ControlGap),
+                            verticalArrangement = Arrangement.spacedBy(PosDesignTokens.ControlGap),
                             modifier = Modifier.fillMaxSize()
                         ) {
                             items(pageItems) { item ->
@@ -362,11 +373,10 @@ private fun ItemButton(
         modifier = modifier
             .fillMaxWidth()
             .height(68.dp)
-            .shadow(2.dp, RoundedCornerShape(10.dp))
-            .clip(RoundedCornerShape(10.dp))
+            .clip(RoundedCornerShape(PosDesignTokens.ControlCorner))
             .clickable(onClick = onClick),
-        color = Color.White,
-        shape = RoundedCornerShape(10.dp)
+        color = PosDesignTokens.Product,
+        shape = RoundedCornerShape(PosDesignTokens.ControlCorner)
     ) {
         Column(
             modifier = Modifier.fillMaxSize().padding(horizontal = 6.dp, vertical = 6.dp),
@@ -380,13 +390,13 @@ private fun ItemButton(
                 textAlign = TextAlign.Center,
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
-                color = Color(0xFF212121)
+                color = Color.White
             )
             Spacer(modifier = Modifier.height(2.dp))
             Text(
                 text = "$${item.price}",
                 fontSize = 12.sp,
-                color = Color(0xFF757575),
+                color = Color.White.copy(alpha = 0.82f),
                 textAlign = TextAlign.Center
             )
         }
@@ -409,15 +419,15 @@ private fun PageNavigationBar(
 
     Row(
         modifier = modifier
-            .background(Color.White)
+            .background(PosDesignTokens.PanelBackgroundRaised)
             .padding(horizontal = 20.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
         Box(
             modifier = Modifier
-                .clip(RoundedCornerShape(8.dp))
-                .background(if (canPrev) Color(0xFFEEEEEE) else Color.Transparent)
+                .clip(RoundedCornerShape(PosDesignTokens.ControlCorner))
+                .background(if (canPrev) PosDesignTokens.Function else Color.Transparent)
                 .clickable(enabled = canPrev, onClick = onPrevPage)
                 .padding(horizontal = 24.dp, vertical = 8.dp)
         ) {
@@ -425,7 +435,7 @@ private fun PageNavigationBar(
                 text = "◀◀",
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
-                color = if (canPrev) Color(0xFF424242) else Color(0xFFCCCCCC)
+                color = if (canPrev) Color.White else PosDesignTokens.TextDisabled
             )
         }
 
@@ -434,7 +444,7 @@ private fun PageNavigationBar(
                 Text(
                     text = "第 ${currentPage + 1} 頁 / 共 $totalPages 頁",
                     style = MaterialTheme.typography.bodyMedium,
-                    color = Color(0xFF757575)
+                    color = PosDesignTokens.TextSecondary
                 )
             }
             // 小圓點
@@ -448,7 +458,7 @@ private fun PageNavigationBar(
                             modifier = Modifier
                                 .size(if (idx == currentPage) 10.dp else 7.dp)
                                 .clip(CircleShape)
-                                .background(if (idx == currentPage) Color(0xFF1976D2) else Color(0xFFCCCCCC))
+                                .background(if (idx == currentPage) PosDesignTokens.Selection else PosDesignTokens.TextDisabled)
                         )
                     }
                 }
@@ -457,8 +467,8 @@ private fun PageNavigationBar(
 
         Box(
             modifier = Modifier
-                .clip(RoundedCornerShape(8.dp))
-                .background(if (canNext) Color(0xFFEEEEEE) else Color.Transparent)
+                .clip(RoundedCornerShape(PosDesignTokens.ControlCorner))
+                .background(if (canNext) PosDesignTokens.Function else Color.Transparent)
                 .clickable(enabled = canNext, onClick = onNextPage)
                 .padding(horizontal = 24.dp, vertical = 8.dp)
         ) {
@@ -466,7 +476,7 @@ private fun PageNavigationBar(
                 text = "▶▶",
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
-                color = if (canNext) Color(0xFF424242) else Color(0xFFCCCCCC)
+                color = if (canNext) Color.White else PosDesignTokens.TextDisabled
             )
         }
     }
@@ -483,12 +493,12 @@ fun OptionsBottomPanel(
         Box(
             modifier = modifier
                 .fillMaxSize()
-                .background(Color(0xFFEFEFEF)),
+                .background(PosDesignTokens.PanelBackground),
             contentAlignment = Alignment.Center
         ) {
             Text(
                 text = "等待選擇餐點...",
-                color = Color.Gray,
+                color = PosDesignTokens.TextSecondary,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Medium
             )
@@ -508,21 +518,21 @@ fun OptionsBottomPanel(
     Row(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFFEFEFEF))
+            .background(PosDesignTokens.PanelBackground)
     ) {
         // Left 60%: Single Selection Options
         Column(
             modifier = Modifier
                 .weight(0.6f)
                 .fillMaxHeight()
-                .background(Color(0xFFFFF3E0).copy(alpha = 0.4f)) // Light Orange tint matching single selection
+                .background(PosDesignTokens.PanelBackgroundRaised)
                 .padding(6.dp)
         ) {
             Text(
                 text = "單選替換區",
                 fontSize = 12.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color(0xFFE65100),
+                color = PosDesignTokens.TextSecondary,
                 modifier = Modifier.fillMaxWidth().padding(bottom = 4.dp),
                 textAlign = TextAlign.Center
             )
@@ -548,7 +558,7 @@ fun OptionsBottomPanel(
             modifier = Modifier
                 .fillMaxHeight()
                 .width(1.dp)
-                .background(Color.LightGray)
+                .background(PosDesignTokens.Divider)
         )
 
         // Right 40%: Multi Selection Options (Add-ons)
@@ -556,14 +566,14 @@ fun OptionsBottomPanel(
             modifier = Modifier
                 .weight(0.4f)
                 .fillMaxHeight()
-                .background(Color(0xFFE3F2FD).copy(alpha = 0.4f)) // Light Blue tint matching multi selection
+                .background(PosDesignTokens.PanelBackground)
                 .padding(6.dp)
         ) {
             Text(
                 text = "加料複選區",
                 fontSize = 12.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color(0xFF0D47A1),
+                color = PosDesignTokens.TextSecondary,
                 modifier = Modifier.fillMaxWidth().padding(bottom = 4.dp),
                 textAlign = TextAlign.Center
             )
@@ -592,18 +602,17 @@ private fun OptionButton(
     isSelected: Boolean,
     onClick: () -> Unit
 ) {
-    val bg = if (isSelected) Color(0xFF1976D2) else Color.White
-    val textCol = if (isSelected) Color.White else Color(0xFF333333)
+    val bg = if (isSelected) PosDesignTokens.Selection else PosDesignTokens.PanelBackgroundRaised
+    val textCol = if (isSelected) Color.White else PosDesignTokens.TextPrimary
 
     Surface(
         modifier = Modifier
             .fillMaxWidth()
             .height(48.dp)
-            .shadow(1.dp, RoundedCornerShape(8.dp))
-            .clip(RoundedCornerShape(8.dp))
+            .clip(RoundedCornerShape(PosDesignTokens.ControlCorner))
             .clickable(onClick = onClick),
         color = bg,
-        shape = RoundedCornerShape(8.dp)
+        shape = RoundedCornerShape(PosDesignTokens.ControlCorner)
     ) {
         Column(
             modifier = Modifier.fillMaxSize().padding(2.dp),
@@ -622,7 +631,7 @@ private fun OptionButton(
             Text(
                 text = if (option.price > 0) "+$${option.price}元" else if (option.price < 0) "-$${Math.abs(option.price)}元" else "免費",
                 fontSize = 10.sp,
-                color = if (isSelected) Color.White.copy(alpha = 0.8f) else Color.Gray,
+                color = if (isSelected) Color.White.copy(alpha = 0.8f) else PosDesignTokens.TextSecondary,
                 textAlign = TextAlign.Center
             )
         }

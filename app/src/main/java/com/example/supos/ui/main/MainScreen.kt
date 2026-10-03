@@ -1,6 +1,7 @@
 package com.example.supos.ui.main
 
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -35,6 +36,7 @@ import androidx.navigation3.runtime.NavKey
 import com.example.supos.SuPOSApplication
 import com.example.supos.data.local.entity.MenuItemEntity
 import com.example.supos.theme.SuPOSTheme
+import com.example.supos.ui.adaptive.TabletLayoutProportions
 import com.example.supos.ui.adaptive.rememberWindowSizeClass
 import com.example.supos.ui.main.components.CartColumn
 import com.example.supos.ui.main.components.DailyTurnoverColumn
@@ -154,6 +156,7 @@ fun MainScreen(
           onClearCart = { viewModel.clearCart() },
           onCheckout = { viewModel.checkout() },
           onNavigateToHistory = { onItemClick(com.example.supos.OrderHistory) },
+          onNavigateToOnlineOrder = { onItemClick(com.example.supos.OnlineOrderReceiver) },
           onAdjustQuantity = { viewModel.adjustSelectedQuantity(it) },
           onDeleteItem = { viewModel.deleteSelectedCartItem() },
           onClearOptions = { viewModel.clearOptionsOfSelected() },
@@ -212,6 +215,7 @@ internal fun MainScreenContent(
     onClearCart: () -> Unit,
     onCheckout: () -> Unit,
     onNavigateToHistory: () -> Unit,
+    onNavigateToOnlineOrder: () -> Unit = {},
     onAdjustQuantity: (Int) -> Unit,
     onDeleteItem: () -> Unit,
     onClearOptions: () -> Unit,
@@ -279,8 +283,14 @@ internal fun MainScreenContent(
     }
 
     if (windowSize.isExpanded) {
-      // 10-12 吋平板橫向: 經典三欄佈局
-      Row(modifier = Modifier.fillMaxSize()) {
+      val proportions = TabletLayoutProportions.getProportions(windowSize.isLargeTabletLandscape)
+      // 10-12 吋平板橫向：三欄填滿螢幕；Tab S7 採 34% / 13% / 53%。
+      Row(
+          modifier = Modifier
+              .fillMaxSize()
+              .background(PosDesignTokens.AppBackground),
+          horizontalArrangement = Arrangement.spacedBy(PosDesignTokens.PanelGap)
+      ) {
         CartColumn(
             cartItems = cartItems,
             selectedCartItemId = selectedCartItemId,
@@ -293,7 +303,7 @@ internal fun MainScreenContent(
             carrier = carrier,
             onItemSelect = onSelectCartItem,
             onOptionSelect = onOptionSelect,
-            modifier = Modifier.weight(0.30f)
+            modifier = Modifier.weight(proportions.cartWeight)
         )
 
         FunctionColumn(
@@ -303,6 +313,7 @@ internal fun MainScreenContent(
             onClearCart = onClearCart,
             onCheckout = onCheckout,
             onNavigateToHistory = onNavigateToHistory,
+            onNavigateToOnlineOrder = onNavigateToOnlineOrder,
             onAdjustQuantity = onAdjustQuantity,
             onDeleteItem = onDeleteItem,
             onClearOptions = onClearOptions,
@@ -318,10 +329,10 @@ internal fun MainScreenContent(
             isSubmitting = isSubmitting,
             unsyncedOrdersCount = unsyncedOrdersCount,
             onRetrySyncOutbox = onRetrySyncOutbox,
-            modifier = Modifier.weight(0.18f)
+            modifier = Modifier.weight(proportions.functionWeight)
         )
 
-        RenderRightWorkspace(mod = Modifier.weight(0.52f))
+        RenderRightWorkspace(mod = Modifier.weight(proportions.menuWeight))
       }
     } else if (windowSize.isMedium) {
       // 7 吋平板或 1/2 分割畫面: 雙欄自適應 (左側 Tab 切換購物車與功能 42%, 右側菜單 58%)
@@ -363,6 +374,7 @@ internal fun MainScreenContent(
                 onClearCart = onClearCart,
                 onCheckout = onCheckout,
                 onNavigateToHistory = onNavigateToHistory,
+                onNavigateToOnlineOrder = onNavigateToOnlineOrder,
                 onAdjustQuantity = onAdjustQuantity,
                 onDeleteItem = onDeleteItem,
                 onClearOptions = onClearOptions,
@@ -438,6 +450,7 @@ internal fun MainScreenContent(
                   onClearCart = onClearCart,
                   onCheckout = onCheckout,
                   onNavigateToHistory = onNavigateToHistory,
+                  onNavigateToOnlineOrder = onNavigateToOnlineOrder,
                   onAdjustQuantity = onAdjustQuantity,
                   onDeleteItem = onDeleteItem,
                   onClearOptions = onClearOptions,

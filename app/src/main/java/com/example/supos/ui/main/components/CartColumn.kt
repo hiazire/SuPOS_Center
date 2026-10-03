@@ -26,6 +26,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.supos.data.model.CartItem
+import com.example.supos.ui.main.PosDesignTokens
 
 @Composable
 fun CartColumn(
@@ -47,14 +48,14 @@ fun CartColumn(
     Column(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFFF5F5F5))
+            .background(PosDesignTokens.PanelBackground)
     ) {
-        // Metadata Info Box (mirrors iPad OrderDetailsColumn top header)
+        // Windows POS 對齊：交易資訊固定在購物車上方，避免操作中改變位置。
         Column(
             modifier = Modifier
                 .fillMaxWidth()
                 .weight(0.20f)
-                .background(Color(0xFFEEEEEE))
+                .background(PosDesignTokens.PanelBackgroundRaised)
                 .padding(12.dp),
             verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
@@ -62,30 +63,40 @@ fun CartColumn(
                 text = "訂單總覽",
                 fontSize = 15.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Black
+                color = PosDesignTokens.TextPrimary
             )
-            Column(
+            Row(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(vertical = 4.dp),
-                verticalArrangement = Arrangement.spacedBy(4.dp)
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                LabeledInfoRow(title = "建立時間", value = createdAt)
-                LabeledInfoRow(title = "交易型態", value = transactionType)
-                LabeledInfoRow(title = "桌號", value = if (tableNumber.isEmpty()) "-" else tableNumber)
-                LabeledInfoRow(title = "發票號碼", value = if (invoiceNumber.isEmpty()) "-" else invoiceNumber)
-                LabeledInfoRow(title = "統一編號", value = if (ubn.isEmpty()) "-" else ubn)
-                LabeledInfoRow(title = "發票載具", value = if (carrier.isEmpty()) "-" else carrier)
+                Column(
+                    modifier = Modifier.weight(1f),
+                    verticalArrangement = Arrangement.spacedBy(4.dp)
+                ) {
+                    LabeledInfoRow(title = "建立時間", value = createdAt)
+                    LabeledInfoRow(title = "交易型態", value = transactionType)
+                    LabeledInfoRow(title = "桌號", value = if (tableNumber.isEmpty()) "-" else tableNumber)
+                }
+                Column(
+                    modifier = Modifier.weight(1f),
+                    verticalArrangement = Arrangement.spacedBy(4.dp)
+                ) {
+                    LabeledInfoRow(title = "發票號碼", value = if (invoiceNumber.isEmpty()) "-" else invoiceNumber)
+                    LabeledInfoRow(title = "統一編號", value = if (ubn.isEmpty()) "-" else ubn)
+                    LabeledInfoRow(title = "發票載具", value = if (carrier.isEmpty()) "-" else carrier)
+                }
             }
             Text(
                 text = "Ver: SuPOS_Android_Antigravity",
                 fontSize = 10.sp,
                 fontWeight = FontWeight.Medium,
-                color = Color.Gray
+                color = PosDesignTokens.TextSecondary
             )
         }
         
-        HorizontalDivider()
+        HorizontalDivider(color = PosDesignTokens.Divider)
 
         // Cart Items
         LazyColumn(
@@ -107,18 +118,18 @@ fun CartColumn(
                         onOptionSelect(optName)
                     }
                 )
-                HorizontalDivider(color = Color.LightGray, thickness = 0.5.dp)
+                HorizontalDivider(color = PosDesignTokens.Divider, thickness = 0.5.dp)
             }
         }
 
-        HorizontalDivider()
+        HorizontalDivider(color = PosDesignTokens.Divider)
 
         // Total
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .weight(0.05f)
-                .background(Color(0xFFEEEEEE))
+                .weight(0.07f)
+                .background(PosDesignTokens.PanelBackgroundRaised)
                 .padding(horizontal = 16.dp),
             contentAlignment = Alignment.Center
         ) {
@@ -130,14 +141,14 @@ fun CartColumn(
                     "總計金額", 
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.Black,
+                    color = PosDesignTokens.TextPrimary,
                     modifier = Modifier.weight(1f)
                 )
                 Text(
                     "$$totalAmount", 
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.Red
+                    color = PosDesignTokens.Warning
                 )
             }
         }
@@ -152,7 +163,7 @@ fun CartItemRow(
     onClick: () -> Unit,
     onOptionClick: (String?) -> Unit
 ) {
-    val backgroundColor = if (isSelected && selectedOptionName == null) Color(0x1A1976D2) else Color.Transparent
+    val backgroundColor = if (isSelected && selectedOptionName == null) PosDesignTokens.Selection.copy(alpha = 0.32f) else Color.Transparent
 
     Column(
         modifier = Modifier
@@ -171,13 +182,13 @@ fun CartItemRow(
                         text = item.menuItem.name,
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold,
-                        color = if (isSelected) Color(0xFF1976D2) else Color.Black
+                        color = if (isSelected) Color.White else PosDesignTokens.TextPrimary
                     )
                     if (item.isComplimentary) {
                         Text(
                             text = "(招待)",
                             fontSize = 14.sp,
-                            color = Color.Red,
+                            color = PosDesignTokens.Warning,
                             fontWeight = FontWeight.Bold,
                             modifier = Modifier.padding(start = 4.dp)
                         )
@@ -191,16 +202,16 @@ fun CartItemRow(
                     text = "x${item.quantity}",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color(0xFF1976D2),
+                    color = PosDesignTokens.TextPrimary,
                     modifier = Modifier.padding(end = 8.dp)
                 )
             }
 
             // Total price
             val priceColor = when {
-                item.isComplimentary -> Color.Red
-                item.customPrice != null -> Color(0xFF1976D2)
-                else -> Color.Black
+                item.isComplimentary -> PosDesignTokens.Warning
+                item.customPrice != null -> PosDesignTokens.Selection
+                else -> PosDesignTokens.TextPrimary
             }
             Text(
                 text = if (item.isComplimentary) "$0" else "$${item.subtotal}",
@@ -280,7 +291,7 @@ private fun LabeledInfoRow(title: String, value: String) {
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Text(text = title, fontSize = 11.sp, color = Color.Gray)
-        Text(text = value, fontSize = 11.sp, fontWeight = FontWeight.Bold, color = Color.DarkGray)
+        Text(text = title, fontSize = 12.sp, color = PosDesignTokens.TextSecondary)
+        Text(text = value, fontSize = 12.sp, fontWeight = FontWeight.Bold, color = PosDesignTokens.TextPrimary)
     }
 }

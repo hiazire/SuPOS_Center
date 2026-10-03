@@ -90,4 +90,18 @@ class AdaptiveLayoutTest {
         assertFalse(expanded.isMedium)
         assertTrue(expanded.isExpanded)
     }
+
+    @Test
+    fun tabS7Proportions_fillScreenAndMatchWindowsMentalModel() {
+        val proportions = TabletLayoutProportions.getProportions(isLargeTabletLandscape = true)
+
+        assertEquals(0.34f, proportions.cartWeight, 0.001f)
+        assertEquals(0.13f, proportions.functionWeight, 0.001f)
+        assertEquals(0.53f, proportions.menuWeight, 0.001f)
+        assertEquals(
+            1.0f,
+            proportions.cartWeight + proportions.functionWeight + proportions.menuWeight,
+            0.001f
+        )
+    }
 }

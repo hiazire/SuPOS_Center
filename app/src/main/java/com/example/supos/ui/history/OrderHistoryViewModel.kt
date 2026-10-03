@@ -65,7 +65,8 @@ sealed class OrderMutationState {
 
 class OrderHistoryViewModel(
     private val orderRepository: OrderRepository,
-    private val menuRepository: com.example.supos.data.repository.MenuRepository
+    private val menuRepository: com.example.supos.data.repository.MenuRepository,
+    private val orderReceiverManager: com.example.supos.service.OrderReceiverManager? = null
 ) : ViewModel() {
 
     private val gson = Gson()
@@ -113,6 +114,16 @@ class OrderHistoryViewModel(
 
     init {
         fetchHistoryFromCloud()
+        if (orderReceiverManager != null) {
+            viewModelScope.launch {
+                orderReceiverManager.newOrderEventFlow.collect { alert ->
+                    _newOrderAlertFlow.tryEmit(alert)
+                    if (_selectedDateFilter.value == OrderDateFilter.TODAY) {
+                        fetchHistoryFromCloud(isBackgroundPoll = true)
+                    }
+                }
+            }
+        }
     }
 
     fun startAutoPolling(intervalMs: Long = 15000L) {

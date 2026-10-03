@@ -20,6 +20,12 @@ class SuPOSApplication : Application() {
         private set
     lateinit var systemHealthRepository: com.example.supos.data.health.SystemHealthRepository
         private set
+    lateinit var orderReceiverManager: com.example.supos.service.OrderReceiverManager
+        private set
+    lateinit var qBurgerHqClient: com.example.supos.data.qburger.QBurgerHqClient
+        private set
+    lateinit var kitchenPrinterRouter: com.example.supos.service.KitchenPrinterRouter
+        private set
 
     override fun onCreate() {
         super.onCreate()
@@ -51,5 +57,14 @@ class SuPOSApplication : Application() {
             menuRepository = menuRepository,
             orderRepository = orderRepository
         )
+        qBurgerHqClient = com.example.supos.data.qburger.QBurgerHqClient()
+        kitchenPrinterRouter = com.example.supos.service.KitchenPrinterRouter()
+
+        orderReceiverManager = com.example.supos.service.OrderReceiverManager(
+            orderRepository = orderRepository,
+            networkMonitor = networkMonitor,
+            qBurgerHqClient = qBurgerHqClient
+        )
+        com.example.supos.service.OrderReceiverService.startService(this)
     }
 }

@@ -23,26 +23,46 @@ class MainScreenViewModel(
     private val orderRepository: OrderRepository
 ) : ViewModel() {
 
+  sealed class CheckoutUiState {
+      object Idle : CheckoutUiState()
+      object Submitting : CheckoutUiState()
+      data class Success(val orderId: String, val isSynced: Boolean) : CheckoutUiState()
+      data class Error(val message: String) : CheckoutUiState()
+  }
+
+  sealed class TurnoverUiState {
+      object Idle : TurnoverUiState()
+      object Loading : TurnoverUiState()
+      data class Success(val amount: Double, val fetchedAt: String) : TurnoverUiState()
+      data class Error(val message: String, val lastKnownAmount: Double? = null) : TurnoverUiState()
+  }
+
+  sealed class MenuSyncUiState {
+      object Idle : MenuSyncUiState()
+      object Syncing : MenuSyncUiState()
+      data class Success(val lastSyncedAt: Long) : MenuSyncUiState()
+      data class Error(val message: String) : MenuSyncUiState()
+  }
+
   // ---- 分類與翻頁狀態 ----
   val selectedCategory = MutableStateFlow<String?>(null)
   val categoryPage = MutableStateFlow(0)
   val itemPage = MutableStateFlow(0)
 
+  // ---- 購物車狀態 ----
+  private val _cartItems = MutableStateFlow<List<CartItem>>(emptyList())
+  val cartItems: StateFlow<List<CartItem>> = _cartItems.asStateFlow()
 
-  // ---- 暫存區與日營業額狀態 ----
-  private val _tempSavedOrders = MutableStateFlow<List<com.example.supos.data.model.TempOrder>>(emptyList())
-  val tempSavedOrders: StateFlow<List<com.example.supos.data.model.TempOrder>> = _tempSavedOrders
+  val uiState: StateFlow<MainScreenUiState> =
+    combine(
+      menuRepository.getMenuItems(),
+      _cartItems
+    ) { menuItems, cartItems ->
+      MainScreenUiState.Success(menuItems, cartItems) as MainScreenUiState
+    }
+      .catch { emit(MainScreenUiState.Error(it)) }
+      .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), MainScreenUiState.Loading)
 
-  private val _currentPOSViewMode = MutableStateFlow(POSViewMode.MANUAL_ORDERING)
-  val currentPOSViewMode: StateFlow<POSViewMode> = _currentPOSViewMode
-
-  private val _todayTurnover = MutableStateFlow(0.0)
-  val todayTurnover: StateFlow<Double> = _todayTurnover
-
-  private val _isFetchingTurnover = MutableStateFlow(false)
-  val isFetchingTurnover: StateFlow<Boolean> = _isFetchingTurnover
-
-  // ---- 購物車選取與附加屬性狀態 ----
   private val _selectedCartItemId = MutableStateFlow<String?>(null)
   val selectedCartItemId: StateFlow<String?> = _selectedCartItemId
 
@@ -70,6 +90,28 @@ class MainScreenViewModel(
   private val _allOptions = MutableStateFlow<List<OptionItemEntity>>(emptyList())
   val allOptions: StateFlow<List<OptionItemEntity>> = _allOptions
 
+  private val _unmappedNotice = MutableStateFlow<String?>(null)
+  val unmappedNotice: StateFlow<String?> = _unmappedNotice
+
+  fun clearUnmappedNotice() {
+      _unmappedNotice.value = null
+  }
+
+  private var activeCheckoutDraft: com.example.supos.data.model.CheckoutDraft? = null
+
+  // ---- 暫存區與日營業額狀態 ----
+  private val _tempSavedOrders = MutableStateFlow<List<com.example.supos.data.model.TempOrder>>(emptyList())
+  val tempSavedOrders: StateFlow<List<com.example.supos.data.model.TempOrder>> = _tempSavedOrders
+
+  private val _currentPOSViewMode = MutableStateFlow(POSViewMode.MANUAL_ORDERING)
+  val currentPOSViewMode: StateFlow<POSViewMode> = _currentPOSViewMode
+
+  private val _todayTurnover = MutableStateFlow(0.0)
+  val todayTurnover: StateFlow<Double> = _todayTurnover
+
+  private val _isFetchingTurnover = MutableStateFlow(false)
+  val isFetchingTurnover: StateFlow<Boolean> = _isFetchingTurnover
+
   val unsyncedOrdersCount: StateFlow<Int> = orderRepository.unsyncedCount
       .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), 0)
 
@@ -92,6 +134,23 @@ class MainScreenViewModel(
           }
       }
   }
+
+  private val _selectedPaymentMethod = MutableStateFlow(com.example.supos.data.model.PaymentMethod.CASH)
+  val selectedPaymentMethod: StateFlow<com.example.supos.data.model.PaymentMethod> = _selectedPaymentMethod.asStateFlow()
+
+  private val checkoutMutex = kotlinx.coroutines.sync.Mutex()
+  private val _checkoutUiState = MutableStateFlow<CheckoutUiState>(CheckoutUiState.Idle)
+  val checkoutUiState: StateFlow<CheckoutUiState> = _checkoutUiState.asStateFlow()
+
+  fun resetCheckoutUiState() {
+      _checkoutUiState.value = CheckoutUiState.Idle
+  }
+
+  private val _turnoverUiState = MutableStateFlow<TurnoverUiState>(TurnoverUiState.Idle)
+  val turnoverUiState: StateFlow<TurnoverUiState> = _turnoverUiState.asStateFlow()
+
+  private val _menuSyncUiState = MutableStateFlow<MenuSyncUiState>(MenuSyncUiState.Idle)
+  val menuSyncUiState: StateFlow<MenuSyncUiState> = _menuSyncUiState.asStateFlow()
 
   init {
       viewModelScope.launch {
@@ -165,26 +224,6 @@ class MainScreenViewModel(
           }
       }
   }
-
-  private val _unmappedNotice = MutableStateFlow<String?>(null)
-  val unmappedNotice: StateFlow<String?> = _unmappedNotice
-
-  fun clearUnmappedNotice() {
-      _unmappedNotice.value = null
-  }
-
-  private val _cartItems = MutableStateFlow<List<CartItem>>(emptyList())
-  val cartItems: StateFlow<List<CartItem>> = _cartItems.asStateFlow()
-
-  val uiState: StateFlow<MainScreenUiState> =
-    combine(
-      menuRepository.getMenuItems(),
-      _cartItems
-    ) { menuItems, cartItems ->
-      MainScreenUiState.Success(menuItems, cartItems) as MainScreenUiState
-    }
-      .catch { emit(MainScreenUiState.Error(it)) }
-      .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), MainScreenUiState.Loading)
 
   fun selectCategory(category: String) {
       selectedCategory.value = category
@@ -350,8 +389,6 @@ class MainScreenViewModel(
       _tableNumber.value = table
   }
 
-  private var activeCheckoutDraft: com.example.supos.data.model.CheckoutDraft? = null
-
   fun cancelEntireTransaction() {
       _cartItems.value = emptyList()
       _selectedCartItemId.value = null
@@ -371,9 +408,6 @@ class MainScreenViewModel(
       cancelEntireTransaction()
   }
 
-  private val _selectedPaymentMethod = MutableStateFlow(com.example.supos.data.model.PaymentMethod.CASH)
-  val selectedPaymentMethod: StateFlow<com.example.supos.data.model.PaymentMethod> = _selectedPaymentMethod.asStateFlow()
-
   fun selectPaymentMethod(pm: com.example.supos.data.model.PaymentMethod) {
       _selectedPaymentMethod.value = pm
   }
@@ -382,21 +416,6 @@ class MainScreenViewModel(
       _invoiceNumber.value = invoice
       _ubn.value = ubn
       _carrier.value = carrier
-  }
-
-  sealed class CheckoutUiState {
-      object Idle : CheckoutUiState()
-      object Submitting : CheckoutUiState()
-      data class Success(val orderId: String, val isSynced: Boolean) : CheckoutUiState()
-      data class Error(val message: String) : CheckoutUiState()
-  }
-
-  private val checkoutMutex = kotlinx.coroutines.sync.Mutex()
-  private val _checkoutUiState = MutableStateFlow<CheckoutUiState>(CheckoutUiState.Idle)
-  val checkoutUiState: StateFlow<CheckoutUiState> = _checkoutUiState.asStateFlow()
-
-  fun resetCheckoutUiState() {
-      _checkoutUiState.value = CheckoutUiState.Idle
   }
 
   fun checkout() {
@@ -520,26 +539,6 @@ class MainScreenViewModel(
       }
       _currentPOSViewMode.value = POSViewMode.MANUAL_ORDERING
   }
-
-  sealed class TurnoverUiState {
-      object Idle : TurnoverUiState()
-      object Loading : TurnoverUiState()
-      data class Success(val amount: Double, val fetchedAt: String) : TurnoverUiState()
-      data class Error(val message: String, val lastKnownAmount: Double? = null) : TurnoverUiState()
-  }
-
-  sealed class MenuSyncUiState {
-      object Idle : MenuSyncUiState()
-      object Syncing : MenuSyncUiState()
-      data class Success(val lastSyncedAt: Long) : MenuSyncUiState()
-      data class Error(val message: String) : MenuSyncUiState()
-  }
-
-  private val _turnoverUiState = MutableStateFlow<TurnoverUiState>(TurnoverUiState.Idle)
-  val turnoverUiState: StateFlow<TurnoverUiState> = _turnoverUiState.asStateFlow()
-
-  private val _menuSyncUiState = MutableStateFlow<MenuSyncUiState>(MenuSyncUiState.Idle)
-  val menuSyncUiState: StateFlow<MenuSyncUiState> = _menuSyncUiState.asStateFlow()
 
   fun manualRefreshMenu() {
       viewModelScope.launch {

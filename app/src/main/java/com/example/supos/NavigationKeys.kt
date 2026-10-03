@@ -10,3 +10,5 @@ import kotlinx.serialization.Serializable
 @Serializable data object OrderHistory : NavKey
 
 @Serializable data object Performance : NavKey
+
+@Serializable data object OnlineOrderReceiver : NavKey

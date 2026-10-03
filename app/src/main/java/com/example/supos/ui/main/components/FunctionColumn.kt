@@ -44,6 +44,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.supos.ui.main.PosDesignTokens
 
 @Composable
 fun FunctionColumn(
@@ -53,6 +54,7 @@ fun FunctionColumn(
     onClearCart: () -> Unit,
     onCheckout: () -> Unit,
     onNavigateToHistory: () -> Unit,
+    onNavigateToOnlineOrder: () -> Unit = {},
     onAdjustQuantity: (Int) -> Unit,
     onDeleteItem: () -> Unit,
     onClearOptions: () -> Unit,
@@ -76,134 +78,72 @@ fun FunctionColumn(
 
     // Dialog state variables
     var customPriceInput by remember { mutableStateOf("") }
-    var tableNumberInput by remember { mutableStateOf("") }
 
     Column(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFFEFEFEF))
-            .padding(6.dp),
+            .background(PosDesignTokens.PanelBackground)
+            .padding(PosDesignTokens.ControlGap),
         verticalArrangement = Arrangement.SpaceBetween
     ) {
-        // Upper part: Function grid
         LazyVerticalGrid(
             columns = GridCells.Fixed(2),
-            horizontalArrangement = Arrangement.spacedBy(6.dp),
-            verticalArrangement = Arrangement.spacedBy(6.dp),
+            horizontalArrangement = Arrangement.spacedBy(PosDesignTokens.ControlGap),
+            verticalArrangement = Arrangement.spacedBy(PosDesignTokens.ControlGap),
             modifier = Modifier.weight(1f)
         ) {
-            // 1. + Quantity
             item {
                 FunctionSquareButton(
-                    label = "＋",
-                    subLabel = "數量加一",
+                    label = "+1",
+                    subLabel = "",
                     isEnabled = selectedCartItemId != null,
                     onClick = { onAdjustQuantity(1) }
                 )
             }
-
-            // 2. - Quantity
             item {
                 FunctionSquareButton(
-                    label = "－",
-                    subLabel = "數量減一",
+                    label = "-1",
+                    subLabel = "",
                     isEnabled = selectedCartItemId != null,
                     onClick = { onAdjustQuantity(-1) }
                 )
             }
-
-            // 3. Delete Selected
             item {
                 FunctionSquareButton(
-                    label = "刪除商品",
+                    label = "交易取消",
                     subLabel = "",
-                    backgroundColor = Color(0xFFE57373),
-                    labelColor = Color.White,
-                    isEnabled = selectedCartItemId != null,
-                    onClick = onDeleteItem
-                )
-            }
-
-            // 4. Clear options
-            item {
-                FunctionSquareButton(
-                    label = "清除加料",
-                    subLabel = "",
-                    isEnabled = selectedCartItemId != null,
-                    onClick = onClearOptions
-                )
-            }
-
-            // 5. Complimentary (招待)
-            item {
-                FunctionSquareButton(
-                    label = "招待",
-                    subLabel = "",
-                    isEnabled = selectedCartItemId != null,
-                    onClick = onApplyComplimentary
-                )
-            }
-
-            // 6. Change price (變價)
-            item {
-                FunctionSquareButton(
-                    label = "變價",
-                    subLabel = "",
-                    isEnabled = selectedCartItemId != null,
-                    onClick = {
-                        customPriceInput = ""
-                        showPriceDialog = true
-                    }
-                )
-            }
-
-            // 7. Transaction type (型態)
-            item {
-                FunctionSquareButton(
-                    label = transactionType,
-                    subLabel = "切換型態",
-                    backgroundColor = Color(0xFF64B5F6),
-                    labelColor = Color.White,
-                    onClick = onToggleTransactionType
-                )
-            }
-
-            // 8. Table number (桌號)
-            item {
-                FunctionSquareButton(
-                    label = if (tableNumber.isEmpty()) "桌號" else "桌號: $tableNumber",
-                    subLabel = "點擊設定",
-                    onClick = {
-                        tableNumberInput = tableNumber
-                        showTableDialog = true
-                    }
-                )
-            }
-
-            // 9. Cancel entire transaction (取消交易)
-            item {
-                FunctionSquareButton(
-                    label = "取消交易",
-                    subLabel = "",
-                    backgroundColor = Color(0xFFEF5350),
+                    backgroundColor = PosDesignTokens.Destructive,
                     labelColor = Color.White,
                     onClick = onClearCart
                 )
             }
-
-            // 10. Order History (歷史訂單)
             item {
                 FunctionSquareButton(
-                    label = "歷史訂單",
+                    label = if (tableNumber.isEmpty()) "桌號輸入" else "桌號 $tableNumber",
                     subLabel = "",
-                    onClick = onNavigateToHistory
+                    onClick = { showTableDialog = true }
                 )
             }
-
-            // --- Temporary Orders & Daily Turnover Functions ---
             item {
                 FunctionSquareButton(
-                    label = "訂單暫存",
+                    label = "刪除商品",
+                    subLabel = "",
+                    isEnabled = selectedCartItemId != null,
+                    onClick = onDeleteItem
+                )
+            }
+            item {
+                FunctionSquareButton(
+                    label = "內用/\n外帶",
+                    subLabel = transactionType,
+                    backgroundColor = PosDesignTokens.Selection,
+                    labelColor = Color.White,
+                    onClick = onToggleTransactionType
+                )
+            }
+            item {
+                FunctionSquareButton(
+                    label = "交易暫存",
                     subLabel = "",
                     isEnabled = selectedCartItemId != null,
                     onClick = onSaveOrderToTemp
@@ -211,16 +151,32 @@ fun FunctionColumn(
             }
             item {
                 FunctionSquareButton(
-                    label = "暫存區",
+                    label = "暫存調閱",
                     subLabel = "",
                     onClick = onShowTempOrders
                 )
             }
             item {
                 FunctionSquareButton(
-                    label = "手動點餐",
+                    label = "交易紀錄\n查詢",
                     subLabel = "",
-                    onClick = onShowManualOrdering
+                    onClick = onNavigateToHistory
+                )
+            }
+            item {
+                FunctionSquareButton(
+                    label = "前筆交易\n查詢",
+                    subLabel = "",
+                    onClick = onNavigateToHistory
+                )
+            }
+            item {
+                FunctionSquareButton(
+                    label = "線上點餐\n查詢",
+                    subLabel = "",
+                    backgroundColor = PosDesignTokens.Category,
+                    labelColor = Color.White,
+                    onClick = onNavigateToOnlineOrder
                 )
             }
             item {
@@ -232,25 +188,52 @@ fun FunctionColumn(
             }
             item {
                 FunctionSquareButton(
-                    label = "交易紀錄",
+                    label = "招待",
                     subLabel = "",
-                    onClick = onNavigateToHistory
+                    isEnabled = selectedCartItemId != null,
+                    onClick = onApplyComplimentary
                 )
             }
             item {
                 FunctionSquareButton(
-                    label = if (unsyncedOrdersCount > 0) "⚠️ 待同步 ($unsyncedOrdersCount)" else "離線同步",
-                    subLabel = if (unsyncedOrdersCount > 0) "點擊重試" else "全部已同步",
-                    backgroundColor = if (unsyncedOrdersCount > 0) Color(0xFFFFA000) else Color(0xFFCFD8DC),
-                    labelColor = if (unsyncedOrdersCount > 0) Color.White else Color(0xFF37474F),
+                    label = "變價",
+                    subLabel = "",
+                    isEnabled = selectedCartItemId != null,
+                    onClick = {
+                        customPriceInput = ""
+                        showPriceDialog = true
+                    }
+                )
+            }
+            item {
+                FunctionSquareButton(
+                    label = "清除加料",
+                    subLabel = "",
+                    isEnabled = selectedCartItemId != null,
+                    onClick = onClearOptions
+                )
+            }
+            item {
+                FunctionSquareButton(
+                    label = "返回點餐",
+                    subLabel = "",
+                    onClick = onShowManualOrdering
+                )
+            }
+            item {
+                FunctionSquareButton(
+                    label = if (unsyncedOrdersCount > 0) "待同步 $unsyncedOrdersCount" else "同步狀態",
+                    subLabel = if (unsyncedOrdersCount > 0) "點擊重試" else "全部完成",
+                    backgroundColor = if (unsyncedOrdersCount > 0) PosDesignTokens.Warning else PosDesignTokens.PanelBackgroundRaised,
+                    labelColor = if (unsyncedOrdersCount > 0) Color.White else PosDesignTokens.TextSecondary,
                     onClick = onRetrySyncOutbox
                 )
             }
             item {
                 FunctionSquareButton(
-                    label = "中控首頁",
-                    subLabel = "切換工作區",
-                    backgroundColor = Color(0xFF455A64),
+                    label = "返回",
+                    subLabel = "中控首頁",
+                    backgroundColor = PosDesignTokens.PanelBackgroundRaised,
                     labelColor = Color.White,
                     onClick = onBackToDashboard
                 )
@@ -265,12 +248,11 @@ fun FunctionColumn(
             enabled = !isSubmitting,
             modifier = Modifier
                 .fillMaxWidth()
-                .height(64.dp)
-                .shadow(2.dp, RoundedCornerShape(10.dp)),
-            shape = RoundedCornerShape(10.dp),
+                .height(64.dp),
+            shape = RoundedCornerShape(PosDesignTokens.ControlCorner),
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFFFF9800),
-                disabledContainerColor = Color.Gray
+                containerColor = PosDesignTokens.Confirm,
+                disabledContainerColor = PosDesignTokens.PanelBackgroundRaised
             )
         ) {
             if (isSubmitting) {
@@ -326,35 +308,13 @@ fun FunctionColumn(
 
     // Table Number Dialog
     if (showTableDialog) {
-        AlertDialog(
-            onDismissRequest = { showTableDialog = false },
-            title = { Text("設定桌號") },
-            text = {
-                Column {
-                    Text("請輸入內用桌號 (留空則清除):")
-                    Spacer(modifier = Modifier.height(8.dp))
-                    OutlinedTextField(
-                        value = tableNumberInput,
-                        onValueChange = { tableNumberInput = it },
-                        singleLine = true,
-                        placeholder = { Text("例如: A1") }
-                    )
-                }
+        TableSelectionDialog(
+            currentTableNumber = tableNumber,
+            onSelectTable = { selectedTable ->
+                onSetTableNumber(selectedTable)
             },
-            confirmButton = {
-                Button(
-                    onClick = {
-                        onSetTableNumber(tableNumberInput.trim())
-                        showTableDialog = false
-                    }
-                ) {
-                    Text("確認")
-                }
-            },
-            dismissButton = {
-                Button(onClick = { showTableDialog = false }) {
-                    Text("取消")
-                }
+            onDismiss = {
+                showTableDialog = false
             }
         )
     }
@@ -364,22 +324,19 @@ fun FunctionColumn(
 private fun FunctionSquareButton(
     label: String,
     subLabel: String,
-    backgroundColor: Color = Color.White,
-    labelColor: Color = Color(0xFF333333),
+    backgroundColor: Color = PosDesignTokens.Function,
+    labelColor: Color = PosDesignTokens.TextPrimary,
     isEnabled: Boolean = true,
     onClick: () -> Unit
 ) {
-    val opacity = if (isEnabled) 1.0f else 0.4f
-    
     Surface(
         modifier = Modifier
             .fillMaxWidth()
-            .height(58.dp)
-            .shadow(if (isEnabled) 1.dp else 0.dp, RoundedCornerShape(8.dp))
-            .clip(RoundedCornerShape(8.dp))
+            .height(PosDesignTokens.MinimumTouchHeight)
+            .clip(RoundedCornerShape(PosDesignTokens.ControlCorner))
             .clickable(enabled = isEnabled, onClick = onClick),
-        color = backgroundColor.copy(alpha = opacity),
-        shape = RoundedCornerShape(8.dp)
+        color = if (isEnabled) backgroundColor else PosDesignTokens.PanelBackgroundRaised,
+        shape = RoundedCornerShape(PosDesignTokens.ControlCorner)
     ) {
         Column(
             modifier = Modifier.fillMaxSize().padding(4.dp),
@@ -390,14 +347,14 @@ private fun FunctionSquareButton(
                 text = label,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.Bold,
-                color = labelColor,
+                color = if (isEnabled) labelColor else PosDesignTokens.TextDisabled,
                 textAlign = TextAlign.Center
             )
             if (subLabel.isNotEmpty()) {
                 Text(
                     text = subLabel,
                     fontSize = 10.sp,
-                    color = if (labelColor == Color.White) Color.White.copy(alpha = 0.8f) else Color.Gray,
+                    color = if (isEnabled) PosDesignTokens.TextSecondary else PosDesignTokens.TextDisabled,
                     textAlign = TextAlign.Center
                 )
             }

@@ -26,6 +26,9 @@ class MainActivity : ComponentActivity() {
     windowInsetsController.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
     windowInsetsController.hide(WindowInsetsCompat.Type.systemBars())
 
+    // 門市立架模式：營業中保持螢幕常亮，防止超時黑屏休眠
+    window.addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+
     enableEdgeToEdge()
     setContent {
       SuPOSTheme {

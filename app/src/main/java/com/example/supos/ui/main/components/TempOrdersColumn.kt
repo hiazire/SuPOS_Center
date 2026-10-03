@@ -30,6 +30,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.supos.data.model.TempOrder
+import com.example.supos.ui.main.PosDesignTokens
 
 @Composable
 fun TempOrdersColumn(
@@ -41,7 +42,7 @@ fun TempOrdersColumn(
     Column(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFFF5F5F5))
+            .background(PosDesignTokens.PanelBackground)
             .padding(16.dp),
         verticalArrangement = Arrangement.SpaceBetween
     ) {
@@ -53,18 +54,19 @@ fun TempOrdersColumn(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "訂單暫存區 (最多5筆)",
+                    text = "暫存調閱",
                     style = MaterialTheme.typography.titleLarge,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    color = PosDesignTokens.TextPrimary
                 )
                 Text(
                     text = "目前：${tempSavedOrders.size} 筆",
-                    color = Color.Gray,
+                    color = PosDesignTokens.TextSecondary,
                     fontSize = 14.sp
                 )
             }
             Spacer(modifier = Modifier.height(8.dp))
-            HorizontalDivider()
+            HorizontalDivider(color = PosDesignTokens.Divider)
         }
 
         // List of temp orders
@@ -76,8 +78,8 @@ fun TempOrdersColumn(
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "暫無儲存訂單",
-                    color = Color.Gray,
+                    text = "無暫存的交易",
+                    color = PosDesignTokens.TextSecondary,
                     fontSize = 18.sp
                 )
             }
@@ -103,11 +105,10 @@ fun TempOrdersColumn(
             onClick = onBackToOrdering,
             modifier = Modifier
                 .fillMaxWidth()
-                .height(54.dp)
-                .shadow(1.dp, RoundedCornerShape(12.dp)),
-            shape = RoundedCornerShape(12.dp),
+                .height(54.dp),
+            shape = RoundedCornerShape(PosDesignTokens.ControlCorner),
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color.Gray
+                containerColor = PosDesignTokens.Function
             )
         ) {
             Text(
@@ -128,8 +129,8 @@ private fun TempOrderRow(
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .clip(RoundedCornerShape(12.dp))
-            .background(Color(0xFFEEEEEE))
+            .clip(RoundedCornerShape(PosDesignTokens.ControlCorner))
+            .background(PosDesignTokens.PanelBackgroundRaised)
             .clickable(onClick = onClick)
             .padding(16.dp)
     ) {
@@ -141,7 +142,7 @@ private fun TempOrderRow(
             Column {
                 Text(
                     text = order.timeString,
-                    color = Color(0xFF1976D2),
+                    color = PosDesignTokens.TextPrimary,
                     fontWeight = FontWeight.Bold,
                     fontSize = 16.sp
                 )
@@ -155,13 +156,13 @@ private fun TempOrderRow(
                 }
                 Text(
                     text = description,
-                    color = Color.Gray,
+                    color = PosDesignTokens.TextSecondary,
                     fontSize = 14.sp
                 )
             }
             Text(
                 text = "▶",
-                color = Color.LightGray,
+                color = PosDesignTokens.TextSecondary,
                 fontSize = 18.sp
             )
         }

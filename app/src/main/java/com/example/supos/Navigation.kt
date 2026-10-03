@@ -21,7 +21,7 @@ fun MainNavigation() {
       entryProvider {
         entry<Dashboard> {
           DashboardScreen(
-            onOpenOnlineOrders = { backStack.add(OrderHistory) },
+            onOpenOnlineOrders = { backStack.add(OnlineOrderReceiver) },
             onOpenManualOrder = { backStack.add(Main) },
             onOpenPerformance = { backStack.add(Performance) },
             modifier = Modifier.fillMaxSize()
@@ -31,6 +31,12 @@ fun MainNavigation() {
           MainScreen(
             onItemClick = { navKey -> backStack.add(navKey) },
             onBackToDashboard = { backStack.removeLastOrNull() },
+            modifier = Modifier.fillMaxSize()
+          )
+        }
+        entry<OnlineOrderReceiver> {
+          com.example.supos.ui.online.OnlineOrderReceiverScreen(
+            onBack = { backStack.removeLastOrNull() },
             modifier = Modifier.fillMaxSize()
           )
         }
