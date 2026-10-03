@@ -14,7 +14,11 @@ data class MenuItemPayload(
     @SerializedName("name") val name: String,
     @SerializedName("price") val price: String, // Same for price
     @SerializedName("imageUrl") val imageUrl: String?,
-    @SerializedName("options_group") val optionsGroup: String?
+    @SerializedName("options_group") val optionsGroup: String?,
+    @SerializedName("icon") val icon: String? = null,
+    @SerializedName("printer") val printer: String? = null,
+    @SerializedName("sizeTypes") val sizeTypes: String? = null,
+    @SerializedName("isAvailable") val isAvailable: String? = null
 )
 
 data class OptionItemPayload(

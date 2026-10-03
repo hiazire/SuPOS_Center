@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface MenuDao {
-    @Query("SELECT * FROM menu_items")
+    @Query("SELECT * FROM menu_items ORDER BY sourceOrder ASC, id ASC")
     fun getAllMenuItems(): Flow<List<MenuItemEntity>>
 
     @Query("SELECT * FROM option_items")

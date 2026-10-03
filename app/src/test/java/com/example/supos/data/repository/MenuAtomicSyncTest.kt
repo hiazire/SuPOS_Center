@@ -66,6 +66,8 @@ class MenuAtomicSyncTest {
         testDispatcher.scheduler.advanceUntilIdle()
 
         assertTrue(result.isSuccess)
+        assertEquals(1, result.getOrThrow().importedCount)
+        assertEquals(2, result.getOrThrow().skippedCount)
         assertNotNull(repository.lastSuccessfulSyncAt.value)
 
         // Only valid item "可樂" (price 30) should be saved
@@ -79,6 +81,30 @@ class MenuAtomicSyncTest {
         val savedOption = fakeMenuDao.storedOptions.first()
         assertEquals("加蛋", savedOption.name)
         assertEquals(15, savedOption.price)
+    }
+
+    @Test
+    fun syncMenu_preservesSheetOrderAndPrinterMetadata() = runTest(testDispatcher) {
+        fakeGasApiService.customMenuResponse = MenuResponsePayload(
+            success = true,
+            menu = listOf(
+                MenuItemPayload(id = "20", category = "飲品", name = "紅茶", price = "30", imageUrl = "", optionsGroup = null,
+                    icon = "glass", printer = "飲料", sizeTypes = "大, 小", isAvailable = "TURE"),
+                MenuItemPayload(id = "10", category = "主餐", name = "漢堡", price = "70", imageUrl = "", optionsGroup = null,
+                    icon = "burger", printer = "煎台, 麵包", sizeTypes = "", isAvailable = "FALSE")
+            ),
+            options = emptyList()
+        )
+
+        assertTrue(repository.refreshMenuFromNetwork().isSuccess)
+        val items = fakeMenuDao.storedMenuItems
+        assertEquals(listOf(20, 10), items.map { it.id })
+        assertEquals(listOf(0, 1), items.map { it.sourceOrder })
+        assertEquals("飲料", items[0].printer)
+        assertEquals("glass", items[0].icon)
+        assertEquals("大, 小", items[0].sizeTypes)
+        assertEquals("TURE", items[0].isAvailable)
+        assertEquals("FALSE", items[1].isAvailable)
     }
 
     @Test

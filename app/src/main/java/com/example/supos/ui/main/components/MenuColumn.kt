@@ -53,6 +53,7 @@ import kotlin.math.roundToInt
 import com.example.supos.data.model.CartItem
 import com.example.supos.data.local.entity.OptionItemEntity
 import com.example.supos.ui.main.PosDesignTokens
+import com.example.supos.ui.main.MainScreenViewModel
 
 // ─────────────────────────────────────────────
 // Windows POS 對齊的固定分類／商品格 + 底部客製化選項面板
@@ -69,6 +70,8 @@ fun MenuColumn(
     itemPage: Int,
     selectedCartItem: CartItem?,
     allOptions: List<OptionItemEntity>,
+    menuSyncUiState: MainScreenViewModel.MenuSyncUiState = MainScreenViewModel.MenuSyncUiState.Idle,
+    onRefreshMenu: () -> Unit = {},
     onCategorySelect: (String) -> Unit,
     onCategoryPageChange: (Int) -> Unit,
     onItemPageChange: (Int) -> Unit,
@@ -120,6 +123,8 @@ fun MenuColumn(
                 val totalPages = calcTotalPages(filteredItems.size, ITEMS_PER_PAGE)
                 if (itemPage < totalPages - 1) onItemPageChange(itemPage + 1)
             },
+            menuSyncUiState = menuSyncUiState,
+            onRefreshMenu = onRefreshMenu,
             modifier = Modifier
                 .fillMaxWidth()
                 .weight(0.12f)
@@ -411,6 +416,8 @@ private fun PageNavigationBar(
     itemsPerPage: Int,
     onPrevPage: () -> Unit,
     onNextPage: () -> Unit,
+    menuSyncUiState: MainScreenViewModel.MenuSyncUiState,
+    onRefreshMenu: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val totalPages = calcTotalPages(items.size, itemsPerPage)
@@ -464,6 +471,27 @@ private fun PageNavigationBar(
                 }
             }
         }
+
+        Text(
+            text = when (menuSyncUiState) {
+                MainScreenViewModel.MenuSyncUiState.Syncing -> "更新中…"
+                is MainScreenViewModel.MenuSyncUiState.Error -> "更新失敗・重試"
+                is MainScreenViewModel.MenuSyncUiState.Success -> {
+                    if (menuSyncUiState.skippedCount > 0) "缺 ${menuSyncUiState.skippedCount} 品・重試" else "更新菜單"
+                }
+                else -> "更新菜單"
+            },
+            fontSize = 13.sp,
+            fontWeight = FontWeight.Medium,
+            color = if (menuSyncUiState is MainScreenViewModel.MenuSyncUiState.Error ||
+                (menuSyncUiState is MainScreenViewModel.MenuSyncUiState.Success && menuSyncUiState.skippedCount > 0)
+            ) PosDesignTokens.Warning else Color.White,
+            modifier = Modifier
+                .clip(RoundedCornerShape(PosDesignTokens.ControlCorner))
+                .background(PosDesignTokens.Function)
+                .clickable(enabled = menuSyncUiState !is MainScreenViewModel.MenuSyncUiState.Syncing, onClick = onRefreshMenu)
+                .padding(horizontal = 12.dp, vertical = 10.dp)
+        )
 
         Box(
             modifier = Modifier

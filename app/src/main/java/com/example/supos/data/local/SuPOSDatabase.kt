@@ -23,7 +23,7 @@ import com.example.supos.data.local.entity.OrderOptionEntity
         OrderOptionEntity::class,
         OrderDraftEntity::class
     ],
-    version = 7,
+    version = 8,
     exportSchema = false
 )
 abstract class SuPOSDatabase : RoomDatabase() {
@@ -107,6 +107,16 @@ abstract class SuPOSDatabase : RoomDatabase() {
                 db.execSQL("ALTER TABLE `orders` ADD COLUMN `invoiceNumber` TEXT NOT NULL DEFAULT ''")
                 db.execSQL("ALTER TABLE `orders` ADD COLUMN `ubn` TEXT NOT NULL DEFAULT ''")
                 db.execSQL("ALTER TABLE `orders` ADD COLUMN `carrier` TEXT NOT NULL DEFAULT ''")
+            }
+        }
+
+        val MIGRATION_7_8 = object : Migration(7, 8) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE `menu_items` ADD COLUMN `sourceOrder` INTEGER NOT NULL DEFAULT 2147483647")
+                db.execSQL("ALTER TABLE `menu_items` ADD COLUMN `icon` TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE `menu_items` ADD COLUMN `printer` TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE `menu_items` ADD COLUMN `sizeTypes` TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE `menu_items` ADD COLUMN `isAvailable` TEXT DEFAULT NULL")
             }
         }
     }

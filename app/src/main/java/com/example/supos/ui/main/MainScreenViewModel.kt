@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.supos.data.local.entity.MenuItemEntity
 import com.example.supos.data.local.entity.OptionItemEntity
 import com.example.supos.data.model.CartItem
+import com.example.supos.data.model.isOrderable
 import com.example.supos.data.repository.MenuRepository
 import com.example.supos.data.repository.OrderRepository
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -40,7 +41,7 @@ class MainScreenViewModel(
   sealed class MenuSyncUiState {
       object Idle : MenuSyncUiState()
       object Syncing : MenuSyncUiState()
-      data class Success(val lastSyncedAt: Long) : MenuSyncUiState()
+      data class Success(val lastSyncedAt: Long, val skippedCount: Int) : MenuSyncUiState()
       data class Error(val message: String) : MenuSyncUiState()
   }
 
@@ -58,7 +59,7 @@ class MainScreenViewModel(
       menuRepository.getMenuItems(),
       _cartItems
     ) { menuItems, cartItems ->
-      MainScreenUiState.Success(menuItems, cartItems) as MainScreenUiState
+      MainScreenUiState.Success(menuItems.filter { it.isOrderable() }, cartItems) as MainScreenUiState
     }
       .catch { emit(MainScreenUiState.Error(it)) }
       .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), MainScreenUiState.Loading)
@@ -153,16 +154,20 @@ class MainScreenViewModel(
   val menuSyncUiState: StateFlow<MenuSyncUiState> = _menuSyncUiState.asStateFlow()
 
   init {
-      viewModelScope.launch {
-          menuRepository.refreshMenuFromNetwork()
-      }
+      manualRefreshMenu()
       // 當菜單載入後自動選取第一個分類
       viewModelScope.launch {
           menuRepository.getMenuItems().collect { items ->
-              val cats = items.map { it.category }.filter { it.isNotBlank() }.distinct().sorted()
-              if (selectedCategory.value == null && cats.isNotEmpty()) {
-                  selectedCategory.value = cats.first()
+              val orderableItems = items.filter { it.isOrderable() }
+              val cats = orderableItems.map { it.category }.filter { it.isNotBlank() }.distinct()
+              if (selectedCategory.value !in cats) {
+                  selectedCategory.value = cats.firstOrNull()
+                  categoryPage.value = 0
+                  itemPage.value = 0
               }
+              if (categoryPage.value * 18 >= cats.size) categoryPage.value = 0
+              val visibleItemCount = orderableItems.count { it.category == selectedCategory.value }
+              if (itemPage.value * 15 >= visibleItemCount) itemPage.value = 0
           }
       }
       // 載入所有加料/客製化選項
@@ -240,6 +245,7 @@ class MainScreenViewModel(
   }
 
   fun addToCart(menuItem: MenuItemEntity) {
+      if (!menuItem.isOrderable()) return
       val currentCart = _cartItems.value.toMutableList()
       if (currentCart.isEmpty()) {
           val formatter = java.text.SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault())
@@ -541,11 +547,15 @@ class MainScreenViewModel(
   }
 
   fun manualRefreshMenu() {
+      if (_menuSyncUiState.value is MenuSyncUiState.Syncing) return
+      _menuSyncUiState.value = MenuSyncUiState.Syncing
       viewModelScope.launch {
-          _menuSyncUiState.value = MenuSyncUiState.Syncing
           val result = menuRepository.refreshMenuFromNetwork()
           if (result.isSuccess) {
-              _menuSyncUiState.value = MenuSyncUiState.Success(System.currentTimeMillis())
+              _menuSyncUiState.value = MenuSyncUiState.Success(
+                  System.currentTimeMillis(),
+                  result.getOrThrow().skippedCount
+              )
           } else {
               _menuSyncUiState.value = MenuSyncUiState.Error(result.exceptionOrNull()?.message ?: "菜單更新失敗")
           }

@@ -80,6 +80,20 @@ class RoomMigrationChainTest {
         assertTrue(statements.any { it.contains("ALTER TABLE `orders` ADD COLUMN `carrier`") })
     }
 
+    @Test
+    fun migration_7_to_8_preservesMenuAndAddsSheetMetadata() {
+        val statements = mutableListOf<String>()
+        val mockDb = createCapturingMockDb(statements)
+
+        SuPOSDatabase.MIGRATION_7_8.migrate(mockDb)
+
+        assertTrue(statements.any { it.contains("ADD COLUMN `sourceOrder` INTEGER NOT NULL DEFAULT 2147483647") })
+        assertTrue(statements.any { it.contains("ADD COLUMN `icon` TEXT NOT NULL DEFAULT ''") })
+        assertTrue(statements.any { it.contains("ADD COLUMN `printer` TEXT NOT NULL DEFAULT ''") })
+        assertTrue(statements.any { it.contains("ADD COLUMN `sizeTypes` TEXT NOT NULL DEFAULT ''") })
+        assertTrue(statements.any { it.contains("ADD COLUMN `isAvailable` TEXT DEFAULT NULL") })
+    }
+
     private fun createCapturingMockDb(statements: MutableList<String>): SupportSQLiteDatabase {
         val handler = InvocationHandler { _, method, args ->
             if (method.name == "execSQL" && args != null && args.isNotEmpty()) {

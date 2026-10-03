@@ -46,8 +46,12 @@ class GasApiServiceContractTest {
                         "category": "漢堡類",
                         "name": "牛肉堡",
                         "price": "120",
+                        "icon": "burger",
+                        "printer": "煎台, 麵包",
                         "imageUrl": "http://example.com/img.jpg",
-                        "options_group": "配料"
+                        "options_group": "配料",
+                        "sizeTypes": "大, 小",
+                        "isAvailable": "TURE"
                     }
                 ],
                 "options": [
@@ -64,6 +68,10 @@ class GasApiServiceContractTest {
         assertEquals(1, result.menu.size)
         assertEquals("漢堡類", result.menu.first().category)
         assertEquals("牛肉堡", result.menu.first().name)
+        assertEquals("burger", result.menu.first().icon)
+        assertEquals("煎台, 麵包", result.menu.first().printer)
+        assertEquals("大, 小", result.menu.first().sizeTypes)
+        assertEquals("TURE", result.menu.first().isAvailable)
         assertNotNull(result.options)
         assertEquals(1, result.options!!.size)
         assertEquals("加蛋", result.options!!.first().name)

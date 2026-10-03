@@ -21,6 +21,14 @@ Dashboard
   未付款且未取消的訂單計入待處理。
 - `OrderRepository`：Room local-first 訂單與 GAS API 的整合邊界。
 
+## 點餐菜單來源
+
+- 權威資料是 [門市試算表的 `Menu` 工作頁](https://docs.google.com/spreadsheets/d/191x1EVmp5tzc1ODrl3zDisVz4sq7LpWsRVsIUUeJiGI/edit)。Android 透過既有 GAS `fetchMenu()` 取得內容，驗證後以 Room transaction 更新本機菜單。
+- `id`、`category`、`name`、`price`、`imageUrl`、`options_group`、`icon`、`printer`、`sizeTypes`、`isAvailable` 均從該回應保存。`printer` 為菜單出單站別原始值，實際列印仍須完成印表機權威 mapping。
+- 分類順序取 `Menu` 工作頁首次出現的順序，商品順序取列順序；Room 以 `sourceOrder` 保存，舊版菜單在首次同步前以商品 ID 作穩定排序。
+- 現行表格將可售值拼為 `TURE`，Android 同時接受 `TURE` 和 `TRUE`。空白或其他非可售值不進入點餐選單；升級前沒有此欄的本機舊菜單維持可見，直到成功同步。
+- 空白／非法價格與無效／重複 ID 的商品不進入可售菜單，點餐畫面會顯示本次跳過的品項數。`sizeTypes` 目前全部為空，不產生規格選擇介面。
+
 ## 整合規則
 
 - 訂單 ID 是同步與去重的主鍵。

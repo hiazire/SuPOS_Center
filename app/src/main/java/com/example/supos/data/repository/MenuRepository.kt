@@ -9,6 +9,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
 
+data class MenuSyncSummary(val importedCount: Int, val skippedCount: Int)
+
 class MenuRepository(
     private val menuDao: MenuDao,
     private val gasApiService: GasApiService,
@@ -41,7 +43,7 @@ class MenuRepository(
         return menuDao.getAllOptions()
     }
 
-    suspend fun refreshMenuFromNetwork(): Result<Unit> = withContext(ioDispatcher) {
+    suspend fun refreshMenuFromNetwork(): Result<MenuSyncSummary> = withContext(ioDispatcher) {
         try {
             val response = gasApiService.fetchMenu()
             if (!response.success) {
@@ -51,8 +53,9 @@ class MenuRepository(
 
             val validMenu = mutableListOf<MenuItemEntity>()
             val rejectedMenuItems = mutableListOf<String>()
+            val seenIds = mutableSetOf<Int>()
 
-            for (payload in response.menu) {
+            for ((sourceOrder, payload) in response.menu.withIndex()) {
                 if (payload.name.isBlank() || payload.category.isBlank()) {
                     rejectedMenuItems.add("${payload.name} (空白名稱或分類)")
                     continue
@@ -62,15 +65,25 @@ class MenuRepository(
                     rejectedMenuItems.add("${payload.name} (非法價格: ${payload.price})")
                     continue
                 }
+                val id = payload.id.toIntOrNull()
+                if (id == null || !seenIds.add(id)) {
+                    rejectedMenuItems.add("${payload.name} (無效或重複的 Menu ID: ${payload.id})")
+                    continue
+                }
 
                 validMenu.add(
                     MenuItemEntity(
-                        id = payload.id.toIntOrNull() ?: payload.name.hashCode(),
+                        id = id,
                         category = payload.category.trim(),
                         name = payload.name.trim(),
                         price = parsedPrice,
                         imageUrl = payload.imageUrl ?: "",
-                        optionsGroup = payload.optionsGroup
+                        optionsGroup = payload.optionsGroup?.trim(),
+                        sourceOrder = sourceOrder,
+                        icon = payload.icon?.trim().orEmpty(),
+                        printer = payload.printer?.trim().orEmpty(),
+                        sizeTypes = payload.sizeTypes?.trim().orEmpty(),
+                        isAvailable = payload.isAvailable?.trim()
                     )
                 )
             }
@@ -107,7 +120,7 @@ class MenuRepository(
             menuDao.replaceMenuAndOptions(validMenu, validOptions)
             _lastSuccessfulSyncAt.value = System.currentTimeMillis()
             safeLogD("MenuRepository", "Successfully synced and replaced menu atomically (${validMenu.size} items, ${validOptions.size} options).")
-            Result.success(Unit)
+            Result.success(MenuSyncSummary(validMenu.size, rejectedMenuItems.size))
         } catch (e: Exception) {
             safeLogE("MenuRepository", "Failed to fetch or replace menu from GAS", e)
             Result.failure(e)

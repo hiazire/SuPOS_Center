@@ -40,7 +40,8 @@ class SuPOSApplication : Application() {
             SuPOSDatabase.MIGRATION_3_4,
             SuPOSDatabase.MIGRATION_4_5,
             SuPOSDatabase.MIGRATION_5_6,
-            SuPOSDatabase.MIGRATION_6_7
+            SuPOSDatabase.MIGRATION_6_7,
+            SuPOSDatabase.MIGRATION_7_8
         )
         .build()
         val gasApiService = com.example.supos.data.network.GasApiClientFactory.createGasApiService()
